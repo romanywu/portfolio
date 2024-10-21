@@ -2,7 +2,7 @@
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<h1 align="center">Pedro Costa - Portfolio </h1>
+<h1 align="center">Roman Wu - Portfolio </h1>
 
 ## Deployment
 https://pedro-costa.dev/
@@ -15,7 +15,7 @@ https://pedro-costa.dev/
 ## Installation
 1. Clone the repo
    ```
-   git clone https://github.com/Pedro-Costa123/Pedro-Costa123.github.io.git
+   git clone https://github.com/romanywu/romanywu.github.io.git
    ```
 3. Install NPM packages
    ```
@@ -50,7 +50,7 @@ https://pedro-costa.dev/
 
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/pedro-costa-a2173213b/
+[linkedin-url]: https://www.linkedin.com/in/romanywu/
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/

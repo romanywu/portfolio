@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import photo from "../../../assets/PedroCosta.jpeg";
+import photo from "../../../assets/RomanWu.jpg";
 import classes from "./About.module.css";
 import Loading from "../../others/Loading/Loading";
 
@@ -67,7 +67,7 @@ const About = () => {
     <>
       <div className={classes.about}>
         <div className={classes.imageContainer}>
-          <img className={classes.image} src={photo} alt="Pedro Costa" />
+          <img className={classes.image} src={photo} alt="Roman Wu" />
         </div>
         <div className={classes.textContainer}>
           <h4 className={classes.contentTitle}>About Me</h4>

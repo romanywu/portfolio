@@ -16,7 +16,7 @@ import { Context } from "../../context/context";
  * The 'changeTab' function is attached to the 'onClick' event of each button.
  * The button for the current page is highlighted by adding the 'buttonActive' class.
  *
- * The component also conditionally renders a heading with the text 'Pedro Costa' when the current page is not 'Home'.
+ * The component also conditionally renders a heading with the text 'Roman Wu' when the current page is not 'Home'.
  *
  */
 const Header = () => {
@@ -35,7 +35,7 @@ const Header = () => {
       }`}
     >
       {currentPage !== "Home" && (
-        <h2 className={classes.fadeInElement}>Pedro Costa</h2>
+        <h2 className={classes.fadeInElement}>Roman Wu</h2>
       )}
       <nav>
         <ul className={classes.headerNavUl}>

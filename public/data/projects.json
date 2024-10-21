@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "Pedro Costa - Portfolio Website",
+      "name": "Roman Wu - Portfolio Website",
       "description": "My own portfolio website, built with React.js and TypeScript, deployed using Github pages with a custom domain. Using my own CSS classes, and a bit of Bootstrap. With the help of AWS (Lambda, SES, API), the user can send me emails just by filling a contact form.",
       "startMonth": "Feb",
       "startYear": 2023,

@@ -21,11 +21,11 @@ import classes from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={classes.mainFooter}>
-      <p className={classes.title}>&copy; 2024 Pedro Costa</p>
+      <p className={classes.title}>&copy; 2024 Roman Wu</p>
       <DarkMode />
       <div className={classes.social_icons}>
         <a
-          href="https://www.linkedin.com/in/pedro-m-da-costa/"
+          href="https://www.linkedin.com/in/romanywu/"
           className={classes.social_icon}
           target="_blank"
           rel="noreferrer"
@@ -33,7 +33,7 @@ const Footer = () => {
           <img src={linkedInLogo} alt="LinkedIn Profile" />
         </a>
         <a
-          href="https://github.com/Pedro-Costa123"
+          href="https://github.com/romanywu"
           className={classes.social_icon}
           target="_blank"
           rel="noreferrer"

@@ -53,7 +53,7 @@ const Header = () => {
     <header className={classes.mainHeader}>
       <Navbar collapseOnSelect expand="sm" className={classes.headerNavUl}>
         <Navbar.Brand>
-          <h1 className={classes.navbar_color}>Pedro Costa</h1>
+          <h1 className={classes.navbar_color}>Roman Wu</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
