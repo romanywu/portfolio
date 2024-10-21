@@ -1,0 +1,21 @@
+{
+  "jobs": [
+    {
+      "name": "McKeil Marine",
+      "logo": "https://mckeil.com/wp-content/uploads/2023/07/logo.svg",
+      "positions": [
+        {
+          "title": "Business Analyst",
+          "company": "McKeil Marine",
+          "type": "Full-time",
+          "location": "Burlington, CA",
+          "description": "",
+          "startMonth": "June",
+          "startYear": 2024,
+          "endMonth": "",
+          "endYear": 0
+        }
+      ]
+    }
+  ]
+}
