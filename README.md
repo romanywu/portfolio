@@ -4,9 +4,6 @@
 
 <h1 align="center">Roman Wu - Portfolio </h1>
 
-## Deployment
-https://pedro-costa.dev/
-
 ## Built With
 * [![React][React.js]][React-url]
 * [![TypeScript][TypeScript.ts]][TypeScript-url]
