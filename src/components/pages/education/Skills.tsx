@@ -28,6 +28,7 @@ import Loading from "../../others/Loading/Loading";
 const Skills = () => {
   const [pLanguages, setPLanguages] = useState([] as Skill[]);
   const [frameworks, setFrameworks] = useState([] as Skill[]);
+  const [technologies, setTechnologies] = useState([] as Skill[])
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -37,6 +38,7 @@ const Skills = () => {
       .then((data) => {
         setPLanguages(data.programming_languages);
         setFrameworks(data.frameworks);
+        setTechnologies(data.technologies);
         setLoading(false);
       })
       .catch((error) => {
@@ -90,6 +92,18 @@ const Skills = () => {
                 alt={language.name}
               />
               {language.name}
+            </li>
+          ))}
+        </ul>
+        <ul>
+          {technologies.map((technologies) => (
+            <li key={technologies.name}>
+              <img
+                className={classes.logo}
+                src={technologies.logo}
+                alt={technologies.name}
+              />
+              {technologies.name}
             </li>
           ))}
         </ul>

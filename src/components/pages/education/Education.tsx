@@ -74,9 +74,6 @@ const Education = () => {
             {schooling.startMonth} {schooling.startYear} - {schooling.endMonth}{" "}
             {schooling.endYear}
           </p>
-          <p className={classes.grade}>
-            Grade: {schooling.grade} {schooling.scale}
-          </p>
         </div>
       ))}
     </>

@@ -5,8 +5,6 @@ class Schooling {
   startYear: number;
   endMonth: string;
   endYear: number;
-  grade: string;
-  scale: string;
 
   constructor(
     institution: string,
@@ -15,8 +13,6 @@ class Schooling {
     startYear: number,
     endMonth: string,
     endYear: number,
-    grade: string,
-    scale: string
   ) {
     this.institution = institution;
     this.degree = degree;
@@ -24,8 +20,6 @@ class Schooling {
     this.startYear = startYear;
     this.endMonth = endMonth;
     this.endYear = endYear;
-    this.grade = grade;
-    this.scale = scale;
   }
 }
 
