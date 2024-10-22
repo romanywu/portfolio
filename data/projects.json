@@ -1,44 +1,36 @@
 {
   "projects": [
     {
-      "name": "Roman Wu - Portfolio Website",
-      "description": "My own portfolio website, built with React.js and TypeScript, deployed using GitHub Pages with a custom domain. Used my own CSS classes and a bit of Bootstrap. Integrated AWS (Lambda, SES, API) to enable users to send me emails via a contact form.",
-      "startMonth": "Feb",
-      "startYear": 2023,
-      "endMonth": "",
-      "endYear": 0
-    },
-    {
-      "name": "BestRide (startup) / Final Year Project",
-      "description": "BestRide's primary goal was to address challenges in the Tuk Tuk tourism business in Lisbon. Issues like lack of regulation, unfair pricing, and workforce stabilization were tackled using two mobile apps: one for tourists and one for drivers/companies. I worked as a frontend developer using Angular and Ionic, with AWS hosting both apps and enabling automatic deployments. Grade: 15 (1-20).",
-      "startMonth": "Sep",
-      "startYear": 2021,
-      "endMonth": "Sep",
-      "endYear": 2022
-    },
-    {
       "name": "VessMark | An Open-Source Financial Services Platform",
       "description": "Developed a scalable crowdfunding platform using the SSM framework and a microservices architecture, deployed on AWS. Secured with Spring Security and OAuth2, built RESTful APIs, and used MyBatis for database interactions. Integrated Redis for caching and optimized with GraphQL and DataLoader to resolve N+1 query issues efficiently.",
-      "startMonth": "",
-      "startYear": 2023,
-      "endMonth": "",
-      "endYear": 0
-    },
-    {
-      "name": "DataStreamPy | An Unpublished SQL Server and Databricks Syncing Library",
-      "description": "Developed a Python library for migrating data from SQL Server to Azure Databricks, leveraging Apache Kafka for streaming and Spark for distributed processing. Integrated a React and TypeScript dashboard for real-time monitoring, optimizing pipelines and reducing latency through improved task parallelism.",
-      "startMonth": "",
-      "startYear": 2022,
-      "endMonth": "",
-      "endYear": 0
+      "startMonth": "Mar",
+      "startYear": 2025,
+      "endMonth": "Jul",
+      "endYear": 2025
     },
     {
       "name": "ShipTrack | An Unpublished Logistics Optimization Platform",
       "description": "Developed a microservices-based fleet management system using Java, Spring Boot, and React, optimizing vessel tracking and scheduling. Deployed services on AWS EC2 and RDS, implemented Redis caching, achieving 99% uptime and improving operational efficiency by 30% for over 1,000 clients.",
-      "startMonth": "",
-      "startYear": 2023,
-      "endMonth": "",
-      "endYear": 0
+      "startMonth": "Nov",
+      "startYear": 2024,
+      "endMonth": "Jul",
+      "endYear": 2025
+    },
+    {
+      "name": "DataStreamPy | An Unpublished SQL Server and Databricks Syncing Library",
+      "description": "Developed a Python library for migrating data from SQL Server to Azure Databricks, leveraging Apache Kafka for streaming and Spark for distributed processing. Integrated a React and TypeScript dashboard for real-time monitoring, optimizing pipelines and reducing latency through improved task parallelism.",
+      "startMonth": "Jul",
+      "startYear": 2024,
+      "endMonth": "Nov",
+      "endYear": 2024
+    },
+    {
+      "name": "Roman Wu - Portfolio Website",
+      "description": "My own portfolio website, built with React.js and TypeScript, deployed using GitHub Pages with a custom domain. Used my own CSS classes and a bit of Bootstrap. Integrated AWS (Lambda, SES, API) to enable users to send me emails via a contact form.",
+      "startMonth": "Oct",
+      "startYear": 2024,
+      "endMonth": "Nov",
+      "endYear": 2024
     }
   ]
 }
