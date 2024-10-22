@@ -2,19 +2,32 @@
   "frameworks": [
     { "name": "Spring Boot", "logo": "logo_skills/springboot.svg" },
     { "name": "React.js", "logo": "logo_skills/react.svg" },
-    { "name": "Flutter", "logo": "logo_skills/flutter.svg" },
-    { "name": "Ionic", "logo": "logo_skills/ionic.svg" },
-    { "name": "Angular", "logo": "logo_skills/angular.svg" },
     { "name": "Docker", "logo": "logo_skills/docker.svg" },
-    { "name": "AWS", "logo": "logo_skills/aws.svg" }
+    { "name": "AWS", "logo": "logo_skills/aws.svg" },
+    { "name": "Kubernetes", "logo": "logo_skills/kubernetes.svg" },
+    { "name": "RabbitMQ", "logo": "logo_skills/rabbitmq.svg" }
   ],
   "programming_languages": [
     { "name": "Java", "logo": "logo_skills/java.svg" },
     { "name": "TypeScript", "logo": "logo_skills/typescript.svg" },
-    { "name": "Dart", "logo": "logo_skills/dart.svg" },
     { "name": "Python", "logo": "logo_skills/python.svg" },
-    { "name": "Kotlin", "logo": "logo_skills/kotlin.svg" },
-    { "name": "C/C++", "logo": "logo_skills/cplusplus.svg" },
+    { "name": "SQL", "logo": "logo_skills/sql.svg" },
+    { "name": "PL/SQL", "logo": "logo_skills/plsql.svg" },
+    { "name": "GraphQL", "logo": "logo_skills/graphql.svg" },
+    { "name": "Shell Scripting", "logo": "logo_skills/shellscripting.svg" },
     { "name": "Git", "logo": "logo_skills/git.svg" }
+  ],
+  "technologies": [
+    { "name": "Redis", "logo": "logo_skills/redis.svg" },
+    { "name": "Nginx", "logo": "logo_skills/nginx.svg" },
+    { "name": "Databricks", "logo": "logo_skills/databricks.svg" },
+    { "name": "MyBatis", "logo": "logo_skills/mybatis.svg" },
+    { "name": "Eureka", "logo": "logo_skills/eureka.svg" },
+    { "name": "Jenkins", "logo": "logo_skills/jenkins.svg" },
+    { "name": "Oracle", "logo": "logo_skills/oracle.svg" },
+    { "name": "PostgreSQL", "logo": "logo_skills/postgresql.svg" },
+    { "name": "OAuth2", "logo": "logo_skills/oauth.svg" },
+    { "name": "Postman", "logo": "logo_skills/postman.svg" },
+    { "name": "MongoDB", "logo": "logo_skills/mongodb.svg" }
   ]
 }
