@@ -5,7 +5,7 @@
       "logo": "https://mckeil.com/wp-content/uploads/2023/07/logo.svg",
       "positions": [
         {
-          "title": "Business Analyst",
+          "title": "Software Engineer",
           "company": "McKeil Marine",
           "type": "Full-time",
           "location": "Burlington, CA",
@@ -14,6 +14,91 @@
           "startYear": 2024,
           "endMonth": "",
           "endYear": 0
+        }
+      ]
+    },
+    {
+      "name": "Hardbacon",
+      "logo": "https://play-lh.googleusercontent.com/mEebaXdYMUnJ1Mn6_dIJzIOn6InuRFxKGNu5a6JmK-at-VzuYtI6cha4WTx9HrdgJw=w240-h480-rw",
+      "positions": [
+        {
+          "title": "Software Engineer",
+          "company": "Hardbacon",
+          "type": "Full-time",
+          "location": "Montreal, CA",
+          "description": "",
+          "startMonth": "January",
+          "startYear": 2024,
+          "endMonth": "June",
+          "endYear": 2024
+        }
+      ]
+    },
+    {
+      "name": "Prologic Consulting",
+      "logo": "https://cdn.durable.co/blocks/3b5rYL5vYpqftwXYkeZYsF0VDdNF1iuVnyxGnz31GQMGyrywtEGIzv9aEgAID62U.png",
+      "positions": [
+        {
+          "title": "Software Engineer",
+          "company": "Prologic Consulting",
+          "type": "Full-time",
+          "location": "Toronto, CA",
+          "description": "",
+          "startMonth": "September",
+          "startYear": 2023,
+          "endMonth": "December",
+          "endYear": 2023
+        }
+      ]
+    },
+    {
+      "name": "Sojo Canada Inc.",
+      "logo": "https://sojoindustries.com/wp-content/uploads/2024/02/sojoindustries-logo-w.png",
+      "positions": [
+        {
+          "title": "Software Engineer Intern",
+          "company": "Sojo Canada Inc.",
+          "type": "Internship",
+          "location": "Markham, CA",
+          "description": "",
+          "startMonth": "September",
+          "startYear": 2022,
+          "endMonth": "December",
+          "endYear": 2022
+        }
+      ]
+    },
+    {
+      "name": "Harvest Fund Management",
+      "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQHdopX55tgWfg/company-logo_200_200/company-logo_200_200/0/1631380925845/harvest_fund_management_logo?e=2147483647&v=beta&t=MdVux848v85ezyTjCBGOM6YLC4Fca1simshiUQzak00",
+      "positions": [
+        {
+          "title": "Backend Engineer Intern",
+          "company": "Harvest Fund Management",
+          "type": "Internship",
+          "location": "Remote",
+          "description": "",
+          "startMonth": "September",
+          "startYear": 2021,
+          "endMonth": "December",
+          "endYear": 2021
+        }
+      ]
+    },
+    {
+      "name": "Bank of China",
+      "logo": "https://thefinrate.com/wp-content/uploads/2024/08/bank-of-china.png",
+      "positions": [
+        {
+          "title": "Developer Intern",
+          "company": "Bank of China",
+          "type": "Internship",
+          "location": "Remote",
+          "description": "",
+          "startMonth": "September",
+          "startYear": 2020,
+          "endMonth": "December",
+          "endYear": 2020
         }
       ]
     }
