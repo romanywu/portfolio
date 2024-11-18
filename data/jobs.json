@@ -2,7 +2,7 @@
   "jobs": [
     {
       "name": "McKeil Marine",
-      "logo": "https://mckeil.com/wp-content/uploads/2023/07/logo.svg",
+      "logo": "https://media.licdn.com/dms/image/v2/C560BAQGD7RdgzNoPYg/company-logo_200_200/company-logo_200_200/0/1631373834794?e=1739404800&v=beta&t=bRFQ4UoTlgJvYMPIgNvAYX6gmP9_V6VUHnut78Vow0Q",
       "positions": [
         {
           "title": "Software Engineer",
@@ -19,15 +19,14 @@
     },
     {
       "name": "Hardbacon",
-      "logo": "https://play-lh.googleusercontent.com/mEebaXdYMUnJ1Mn6_dIJzIOn6InuRFxKGNu5a6JmK-at-VzuYtI6cha4WTx9HrdgJw=w240-h480-rw",
+      "logo": "https://media.licdn.com/dms/image/v2/C560BAQFLeKhYfFeE9A/company-logo_100_100/company-logo_100_100/0/1630658829061/hardbacon_logo?e=1739404800&v=beta&t=o3eBl8O-SpdGYO5Zm7n8pgpTZMIua4yQmTxWcflS5HI",
       "positions": [
         {
           "title": "Software Engineer",
           "company": "Hardbacon",
           "type": "Full-time",
-          "location": "Montreal, CA",
           "description": "",
-          "startMonth": "January",
+          "startMonth": "Mar",
           "startYear": 2024,
           "endMonth": "June",
           "endYear": 2024
@@ -35,69 +34,53 @@
       ]
     },
     {
-      "name": "Prologic Consulting",
-      "logo": "https://cdn.durable.co/blocks/3b5rYL5vYpqftwXYkeZYsF0VDdNF1iuVnyxGnz31GQMGyrywtEGIzv9aEgAID62U.png",
+      "name": "ByteDance",
+      "logo": "https://media.licdn.com/dms/image/v2/C560BAQGA-1ynUGnhlA/company-logo_200_200/company-logo_200_200/0/1630658803864/bytedance_logo?e=1739404800&v=beta&t=nZgrowseCFJNNZ06bEwHRlpIfcvJaGhB_nUfvI_i9D4",
       "positions": [
         {
           "title": "Software Engineer",
-          "company": "Prologic Consulting",
+          "company": "ByteDance",
           "type": "Full-time",
-          "location": "Toronto, CA",
           "description": "",
-          "startMonth": "September",
+          "startMonth": "Apr",
           "startYear": 2023,
-          "endMonth": "December",
-          "endYear": 2023
-        }
-      ]
-    },
-    {
-      "name": "Sojo Canada Inc.",
-      "logo": "https://sojoindustries.com/wp-content/uploads/2024/02/sojoindustries-logo-w.png",
-      "positions": [
+          "endMonth": "Mar",
+          "endYear": 2024
+        },
         {
           "title": "Software Engineer Intern",
-          "company": "Sojo Canada Inc.",
-          "type": "Internship",
-          "location": "Markham, CA",
+          "company": "ByteDance",
+          "type": "Full-time",
           "description": "",
-          "startMonth": "September",
+          "startMonth": "Jan",
           "startYear": 2022,
-          "endMonth": "December",
+          "endMonth": "Aug",
           "endYear": 2022
         }
       ]
     },
     {
-      "name": "Harvest Fund Management",
-      "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQHdopX55tgWfg/company-logo_200_200/company-logo_200_200/0/1631380925845/harvest_fund_management_logo?e=2147483647&v=beta&t=MdVux848v85ezyTjCBGOM6YLC4Fca1simshiUQzak00",
+      "name": "Tencent",
+      "logo": "https://media.licdn.com/dms/image/v2/C560BAQGLiulTOZIebQ/company-logo_100_100/company-logo_100_100/0/1630648290063/tencentglobal_logo?e=1739404800&v=beta&t=rquhhWkAGvc6dO3Uwso04G1exbyKI4Zb-nNUIxKXrV0",
       "positions": [
         {
-          "title": "Backend Engineer Intern",
-          "company": "Harvest Fund Management",
+          "title": "Software Engineer Intern",
+          "company": "Tencent",
           "type": "Internship",
-          "location": "Remote",
           "description": "",
-          "startMonth": "September",
+          "startMonth": "May",
           "startYear": 2021,
-          "endMonth": "December",
+          "endMonth": "Aug",
           "endYear": 2021
-        }
-      ]
-    },
-    {
-      "name": "Bank of China",
-      "logo": "https://thefinrate.com/wp-content/uploads/2024/08/bank-of-china.png",
-      "positions": [
+        },
         {
-          "title": "Developer Intern",
-          "company": "Bank of China",
+          "title": "Software Engineer Intern",
+          "company": "Tencent",
           "type": "Internship",
-          "location": "Remote",
           "description": "",
-          "startMonth": "September",
+          "startMonth": "Sep",
           "startYear": 2020,
-          "endMonth": "December",
+          "endMonth": "Dec",
           "endYear": 2020
         }
       ]
