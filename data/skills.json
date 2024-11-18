@@ -1,34 +1,34 @@
 {
   "frameworks": [
-    { "name": "Spring Boot", "logo": "https://www.svgrepo.com/show/333604/spring-boot.svg" },
-    { "name": "React.js", "logo": "https://www.svgrepo.com/show/503536/react.svg" },
-    { "name": "Docker", "logo": "https://www.svgrepo.com/show/473589/docker.svg" },
-    { "name": "AWS", "logo": "https://www.svgrepo.com/show/445552/aws.svg" },
-    { "name": "Kubernetes", "logo": "https://www.svgrepo.com/show/448486/kubernetes.svg" },
-    { "name": "Kafka", "logo": "https://www.svgrepo.com/show/329947/apachekafka.svg" }
+    { "name": "Spring Boot", "logo": "logo_skills/springboot.svg" },
+    { "name": "React.js", "logo": "logo_skills/react.svg" },
+    { "name": "Docker", "logo": "logo_skills/docker.svg" },
+    { "name": "AWS", "logo": "logo_skills/aws.svg" },
+    { "name": "Kubernetes", "logo": "logo_skills/kubernetes.svg" },
+    { "name": "Kafka", "logo": "logo_skills/kafka.svg" }
   ],
   "programming_languages": [
-    { "name": "Java", "logo": "https://www.svgrepo.com/show/508921/java.svg" },
-    { "name": "TypeScript", "logo": "https://www.svgrepo.com/show/521320/typescript-16.svg" },
-    { "name": "Python", "logo": "https://www.svgrepo.com/show/512738/python-127.svg" },
-    { "name": "SQL", "logo": "https://www.svgrepo.com/show/127001/sql-file-format.svg" },
-    { "name": "GraphQL", "logo": "https://www.svgrepo.com/show/394181/graphql.svg" },
-    { "name": "Shell Scripting", "logo": "https://www.svgrepo.com/show/448988/command-line.svg" },
-    { "name": "Git", "logo": "https://www.svgrepo.com/show/509966/git.svg" }
+    { "name": "Java", "logo": "logo_skills/java.svg" },
+    { "name": "TypeScript", "logo": "logo_skills/typescript.svg" },
+    { "name": "Python", "logo": "logo_skills/python.svg" },
+    { "name": "SQL", "logo": "logo_skills/sql.svg" },
+    { "name": "GraphQL", "logo": "logo_skills/graphql.svg" },
+    { "name": "Shell Scripting", "logo": "logo_skills/shellscripting.svg" },
+    { "name": "Git", "logo": "logo_skills/git.svg" }
   ],
   "technologies": [
-    { "name": "Redis", "logo": "https://www.svgrepo.com/show/394393/redis.svg" },
-    { "name": "Nginx", "logo": "https://www.svgrepo.com/show/394309/nginx.svg" },
-    { "name": "Databricks", "logo": "https://www.svgrepo.com/show/330261/databricks.svg" },
-    { "name": "Hibernate", "logo": "https://www.svgrepo.com/show/330628/hibernate.svg" },
-    { "name": "Jenkins", "logo": "https://www.svgrepo.com/show/445828/jenkins.svg" },
-    { "name": "MySQL", "logo": "https://www.svgrepo.com/show/394296/mysql.svg" }
+    { "name": "Redis", "logo": "logo_skills/redis.svg" },
+    { "name": "Nginx", "logo": "logo_skills/nginx.svg" },
+    { "name": "Databricks", "logo": "logo_skills/databricks.svg" },
+    { "name": "Hibernate", "logo": "logo_skills/hibernate.svg" },
+    { "name": "Jenkins", "logo": "logo_skills/jenkins.svg" },
+    { "name": "MySQL", "logo": "logo_skills/mysql.svg" }
   ],
   "stacks": [
-    { "name": "Elasticsearch", "logo": "https://www.svgrepo.com/show/330356/elasticsearch.svg" },
-    { "name": "Kibana", "logo": "https://www.svgrepo.com/show/341966/kibana.svg" },
-    { "name": "JWT", "logo": "https://www.svgrepo.com/show/306280/jsonwebtokens.svg" },
-    { "name": "Postman", "logo": "https://www.svgrepo.com/show/342128/postman.svg" },
-    { "name": "MongoDB", "logo": "https://www.svgrepo.com/show/473729/mongodb.svg" }
+    { "name": "Elasticsearch", "logo": "logo_skills/elasticsearch.svg" },
+    { "name": "Kibana", "logo": "logo_skills/kibana.svg" },
+    { "name": "JWT", "logo": "logo_skills/jwt.svg" },
+    { "name": "Postman", "logo": "logo_skills/postman.svg" },
+    { "name": "MongoDB", "logo": "logo_skills/mongodb.svg" }
   ]
 }
