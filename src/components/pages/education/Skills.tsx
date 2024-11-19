@@ -6,29 +6,28 @@ import Loading from "../../others/Loading/Loading";
 /**
  * Skills Component
  *
- * This component fetches and displays a list of programming languages and frameworks.
- * It uses the useState and useEffect hooks from React, and CSS modules for styling.
+ * This component fetches and displays a list of programming languages, frameworks, technologies, and stacks.
+ * It uses React hooks (`useState` and `useEffect`) for state management and CSS modules for styling.
  *
- * The component maintains five state variables: 'pLanguages', 'frameworks', 'loading', and 'error'.
- * 'pLanguages' and 'frameworks' are arrays of Skill objects representing programming languages and frameworks respectively.
- * 'loading' is a boolean indicating whether the data is currently being fetched.
- * 'error' is a boolean indicating whether an error occurred while fetching the data.
+ * The component includes the following state variables:
+ * - 'pLanguages': Programming languages (array of Skill objects).
+ * - 'frameworks': Frameworks (array of Skill objects).
+ * - 'technologies': Technologies (array of Skill objects).
+ * - 'stacks': Tech stacks (array of Skill objects).
+ * - 'loading': Boolean indicating whether data is currently being fetched.
+ * - 'error': Boolean indicating whether an error occurred while fetching data.
  *
- * The component includes a useEffect hook that fetches the data from 'data/skills.json' when the component mounts.
- * If the fetch is successful, 'pLanguages' is set to the 'programming_languages' property of the data, 'frameworks' is set to the 'frameworks' property of the data, and 'loading' is set to false.
- * If the fetch fails, 'error' is set to true, and 'loading' is set to false.
- *
- * The component conditionally renders different content based on the state.
- * If 'error' is true, it renders a message indicating that the data could not be loaded.
- * If 'loading' is true, it renders a loading spinner.
- * Otherwise, it renders a list of programming languages and a list of frameworks.
- * Each item in the list includes an image and the name of the programming language or framework.
- *
+ * The data is fetched from 'data/skills.json' when the component mounts.
+ * Based on the state, the component conditionally renders:
+ * - Error message if fetching fails.
+ * - Loading spinner while fetching.
+ * - Lists of skills (programming languages, frameworks, technologies, and stacks) once the data is loaded.
  */
 const Skills = () => {
   const [pLanguages, setPLanguages] = useState([] as Skill[]);
   const [frameworks, setFrameworks] = useState([] as Skill[]);
-  const [technologies, setTechnologies] = useState([] as Skill[])
+  const [technologies, setTechnologies] = useState([] as Skill[]);
+  const [stacks, setStacks] = useState([] as Skill[]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -39,9 +38,10 @@ const Skills = () => {
         setPLanguages(data.programming_languages);
         setFrameworks(data.frameworks);
         setTechnologies(data.technologies);
+        setStacks(data.stacks);
         setLoading(false);
       })
-      .catch((error) => {
+      .catch(() => {
         setError(true);
         setLoading(false);
       });
@@ -96,14 +96,26 @@ const Skills = () => {
           ))}
         </ul>
         <ul>
-          {technologies.map((technologies) => (
-            <li key={technologies.name}>
+          {technologies.map((technology) => (
+            <li key={technology.name}>
               <img
                 className={classes.logo}
-                src={technologies.logo}
-                alt={technologies.name}
+                src={technology.logo}
+                alt={technology.name}
               />
-              {technologies.name}
+              {technology.name}
+            </li>
+          ))}
+        </ul>
+        <ul>
+          {stacks.map((stack) => (
+            <li key={stack.name}>
+              <img
+                className={classes.logo}
+                src={stack.logo}
+                alt={stack.name}
+              />
+              {stack.name}
             </li>
           ))}
         </ul>

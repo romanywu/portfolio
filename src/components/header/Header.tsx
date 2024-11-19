@@ -84,7 +84,7 @@ const Header = () => {
                 changeTab("Work");
               }}
             >
-              Work/Projects
+              Work
             </button>
           </li>
           <li className={classes.headerNavLi}>

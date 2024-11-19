@@ -1,4 +1,4 @@
-//Runtime: Node.js 20.x
+z//Runtime: Node.js 20.x
 //commands outside the machine: npm init -y, npm install nodemailer
 
 const nodemailer = require("nodemailer");

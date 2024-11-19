@@ -2,10 +2,10 @@
   "jobs": [
     {
       "name": "McKeil Marine",
-      "logo": "https://mckeil.com/wp-content/uploads/2023/07/logo.svg",
+      "logo": "https://media.licdn.com/dms/image/v2/C560BAQGD7RdgzNoPYg/company-logo_200_200/company-logo_200_200/0/1631373834794?e=1739404800&v=beta&t=bRFQ4UoTlgJvYMPIgNvAYX6gmP9_V6VUHnut78Vow0Q",
       "positions": [
         {
-          "title": "Business Analyst",
+          "title": "Software Engineer",
           "company": "McKeil Marine",
           "type": "Full-time",
           "location": "Burlington, CA",
@@ -14,6 +14,74 @@
           "startYear": 2024,
           "endMonth": "",
           "endYear": 0
+        }
+      ]
+    },
+    {
+      "name": "Hardbacon",
+      "logo": "https://media.licdn.com/dms/image/v2/C560BAQFLeKhYfFeE9A/company-logo_100_100/company-logo_100_100/0/1630658829061/hardbacon_logo?e=1739404800&v=beta&t=o3eBl8O-SpdGYO5Zm7n8pgpTZMIua4yQmTxWcflS5HI",
+      "positions": [
+        {
+          "title": "Software Engineer",
+          "company": "Hardbacon",
+          "type": "Full-time",
+          "description": "",
+          "startMonth": "Mar",
+          "startYear": 2024,
+          "endMonth": "June",
+          "endYear": 2024
+        }
+      ]
+    },
+    {
+      "name": "ByteDance",
+      "logo": "https://media.licdn.com/dms/image/v2/C560BAQGA-1ynUGnhlA/company-logo_200_200/company-logo_200_200/0/1630658803864/bytedance_logo?e=1739404800&v=beta&t=nZgrowseCFJNNZ06bEwHRlpIfcvJaGhB_nUfvI_i9D4",
+      "positions": [
+        {
+          "title": "Software Engineer",
+          "company": "ByteDance",
+          "type": "Full-time",
+          "description": "",
+          "startMonth": "Apr",
+          "startYear": 2023,
+          "endMonth": "Mar",
+          "endYear": 2024
+        },
+        {
+          "title": "Software Engineer Intern",
+          "company": "ByteDance",
+          "type": "Full-time",
+          "description": "",
+          "startMonth": "Jan",
+          "startYear": 2022,
+          "endMonth": "Aug",
+          "endYear": 2022
+        }
+      ]
+    },
+    {
+      "name": "Tencent",
+      "logo": "https://media.licdn.com/dms/image/v2/C560BAQGLiulTOZIebQ/company-logo_100_100/company-logo_100_100/0/1630648290063/tencentglobal_logo?e=1739404800&v=beta&t=rquhhWkAGvc6dO3Uwso04G1exbyKI4Zb-nNUIxKXrV0",
+      "positions": [
+        {
+          "title": "Software Engineer Intern",
+          "company": "Tencent",
+          "type": "Internship",
+          "description": "",
+          "startMonth": "May",
+          "startYear": 2021,
+          "endMonth": "Aug",
+          "endYear": 2021
+        },
+        {
+          "title": "Software Engineer Intern",
+          "company": "Tencent",
+          "type": "Internship",
+          "description": "",
+          "startMonth": "Sep",
+          "startYear": 2020,
+          "endMonth": "Dec",
+          "endYear": 2020
         }
       ]
     }

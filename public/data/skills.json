@@ -5,14 +5,13 @@
     { "name": "Docker", "logo": "logo_skills/docker.svg" },
     { "name": "AWS", "logo": "logo_skills/aws.svg" },
     { "name": "Kubernetes", "logo": "logo_skills/kubernetes.svg" },
-    { "name": "RabbitMQ", "logo": "logo_skills/rabbitmq.svg" }
+    { "name": "Kafka", "logo": "logo_skills/kafka.svg" }
   ],
   "programming_languages": [
     { "name": "Java", "logo": "logo_skills/java.svg" },
     { "name": "TypeScript", "logo": "logo_skills/typescript.svg" },
     { "name": "Python", "logo": "logo_skills/python.svg" },
     { "name": "SQL", "logo": "logo_skills/sql.svg" },
-    { "name": "PL/SQL", "logo": "logo_skills/plsql.svg" },
     { "name": "GraphQL", "logo": "logo_skills/graphql.svg" },
     { "name": "Shell Scripting", "logo": "logo_skills/shellscripting.svg" },
     { "name": "Git", "logo": "logo_skills/git.svg" }
@@ -21,12 +20,14 @@
     { "name": "Redis", "logo": "logo_skills/redis.svg" },
     { "name": "Nginx", "logo": "logo_skills/nginx.svg" },
     { "name": "Databricks", "logo": "logo_skills/databricks.svg" },
-    { "name": "MyBatis", "logo": "logo_skills/mybatis.svg" },
-    { "name": "Eureka", "logo": "logo_skills/eureka.svg" },
+    { "name": "Hibernate", "logo": "logo_skills/hibernate.svg" },
     { "name": "Jenkins", "logo": "logo_skills/jenkins.svg" },
-    { "name": "Oracle", "logo": "logo_skills/oracle.svg" },
-    { "name": "PostgreSQL", "logo": "logo_skills/postgresql.svg" },
-    { "name": "OAuth2", "logo": "logo_skills/oauth.svg" },
+    { "name": "MySQL", "logo": "logo_skills/mysql.svg" }
+  ],
+  "stacks": [
+    { "name": "Elasticsearch", "logo": "logo_skills/elasticsearch.svg" },
+    { "name": "Kibana", "logo": "logo_skills/kibana.svg" },
+    { "name": "JWT", "logo": "logo_skills/jwt.svg" },
     { "name": "Postman", "logo": "logo_skills/postman.svg" },
     { "name": "MongoDB", "logo": "logo_skills/mongodb.svg" }
   ]

@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className={classes.homeText}>
       <h1 className={classes.typing_animation}>Hi, I'm Roman Wu</h1>
-      <h4>Software Developer</h4>
+      <h4>Software Engineer</h4>
       <hr />
       <h4>Welcome to My Website</h4>
     </div>
