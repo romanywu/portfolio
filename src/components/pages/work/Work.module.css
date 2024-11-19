@@ -44,7 +44,10 @@
 }
 
 .logo {
-  max-height: 40px;
+  max-height: 100px; /* Increase height to make the logo larger */
+  width: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add spacing */
+  object-fit: contain; /* Ensure proper scaling */
 }
 
 .companyContainer {
