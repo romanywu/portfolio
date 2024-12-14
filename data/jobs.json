@@ -7,8 +7,7 @@
         {
           "title": "Software Engineer",
           "company": "McKeil Marine",
-          "type": "Full-time",
-          "description": "Data and Financial Technology",
+          "description": "Financial Engineering Team",
           "startMonth": "June",
           "startYear": 2024,
           "endMonth": "",
@@ -23,8 +22,7 @@
         {
           "title": "Software Engineer",
           "company": "Hardbacon",
-          "type": "Full-time",
-          "description": "Core Platform Engineering",
+          "description": "Platform Team",
           "startMonth": "Mar",
           "startYear": 2024,
           "endMonth": "June",
@@ -39,8 +37,7 @@
         {
           "title": "Software Engineer",
           "company": "ByteDance",
-          "type": "Full-time",
-          "description": "Infrastructure Engineering",
+          "description": "Infrastructure Team ",
           "startMonth": "Apr",
           "startYear": 2023,
           "endMonth": "Mar",
@@ -49,8 +46,7 @@
         {
           "title": "Software Engineer Intern",
           "company": "ByteDance",
-          "type": "Full-time",
-          "description": "AI Lab",
+          "description": "AI Lab Team",
           "startMonth": "Jan",
           "startYear": 2022,
           "endMonth": "Aug",
@@ -65,8 +61,7 @@
         {
           "title": "Software Engineer Intern",
           "company": "Tencent",
-          "type": "Internship",
-          "description": "WeChat Pay",
+          "description": "WeChat Pay Team",
           "startMonth": "May",
           "startYear": 2021,
           "endMonth": "Aug",
@@ -75,8 +70,7 @@
         {
           "title": "Software Engineer Intern",
           "company": "Tencent",
-          "type": "Internship",
-          "description": "Tencent Cloud",
+          "description": "Tencent Cloud Team",
           "startMonth": "Sep",
           "startYear": 2020,
           "endMonth": "Dec",
