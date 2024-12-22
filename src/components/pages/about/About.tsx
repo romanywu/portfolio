@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import photo from "../../../assets/RomanWu.jpg";
+import photo from "../../../assets/RomanWu.jpeg";
 import classes from "./About.module.css";
 import Loading from "../../others/Loading/Loading";
 
