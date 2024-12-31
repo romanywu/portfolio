@@ -71,6 +71,19 @@ const Skills = () => {
     <>
       <h4 className={classes.contentTitle}>Skills</h4>
       <div className={classes.skills}>
+      <ul>
+          {pLanguages.map((language) => (
+            <li key={language.name}>
+              <img
+                className={classes.logo}
+                src={language.logo}
+                alt={language.name}
+              />
+              {language.name}
+            </li>
+          ))}
+        </ul>
+
         <ul>
           {frameworks.map((framework) => (
             <li key={framework.name}>
@@ -80,18 +93,6 @@ const Skills = () => {
                 alt={framework.name}
               />
               {framework.name}
-            </li>
-          ))}
-        </ul>
-        <ul>
-          {pLanguages.map((language) => (
-            <li key={language.name}>
-              <img
-                className={classes.logo}
-                src={language.logo}
-                alt={language.name}
-              />
-              {language.name}
             </li>
           ))}
         </ul>
@@ -108,17 +109,18 @@ const Skills = () => {
           ))}
         </ul>
         <ul>
-          {stacks.map((stack) => (
-            <li key={stack.name}>
+          {stacks.map((stacks) => (
+            <li key={stacks.name}>
               <img
                 className={classes.logo}
-                src={stack.logo}
-                alt={stack.name}
+                src={stacks.logo}
+                alt={stacks.name}
               />
-              {stack.name}
+              {stacks.name}
             </li>
           ))}
         </ul>
+
       </div>
     </>
   );
