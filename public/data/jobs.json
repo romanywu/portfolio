@@ -1,32 +1,17 @@
 {
   "jobs": [
     {
-      "name": "McKeil Marine",
+      "name": "McKeil",
       "logo": "logo_companies/mckeil.png",
       "positions": [
         {
           "title": "Software Engineer",
           "company": "McKeil Marine",
-          "description": "Financial Engineering Team",
+          "description": "Financial Technology",
           "startMonth": "June",
           "startYear": 2024,
           "endMonth": "",
           "endYear": 0
-        }
-      ]
-    },
-    {
-      "name": "Hardbacon",
-      "logo": "logo_companies/hardbacon.png",
-      "positions": [
-        {
-          "title": "Software Engineer",
-          "company": "Hardbacon",
-          "description": "Platform Team",
-          "startMonth": "Mar",
-          "startYear": 2024,
-          "endMonth": "June",
-          "endYear": 2024
         }
       ]
     },
@@ -37,20 +22,26 @@
         {
           "title": "Software Engineer",
           "company": "ByteDance",
-          "description": "Infrastructure Team ",
-          "startMonth": "Apr",
+          "description": "E-Commerce Recommendation Infrastructure",
+          "startMonth": "Oct",
           "startYear": 2023,
-          "endMonth": "Mar",
+          "endMonth": "Jun",
           "endYear": 2024
-        },
+        }
+      ]
+    },
+    {
+      "name": "Hardbacon",
+      "logo": "logo_companies/hardbacon.png",
+      "positions": [
         {
-          "title": "Software Engineer Intern",
-          "company": "ByteDance",
-          "description": "AI Lab Team",
-          "startMonth": "Jan",
-          "startYear": 2022,
-          "endMonth": "Aug",
-          "endYear": 2022
+          "title": "Software Engineer",
+          "company": "Hardbacon",
+          "description": "Realtime Analytics",
+          "startMonth": "Aug",
+          "startYear": 2023,
+          "endMonth": "Oct",
+          "endYear": 2023
         }
       ]
     },
@@ -61,20 +52,11 @@
         {
           "title": "Software Engineer Intern",
           "company": "Tencent",
-          "description": "WeChat Pay Team",
+          "description": "Tencent Gaming Platform",
           "startMonth": "May",
           "startYear": 2021,
           "endMonth": "Aug",
           "endYear": 2021
-        },
-        {
-          "title": "Software Engineer Intern",
-          "company": "Tencent",
-          "description": "Tencent Cloud Team",
-          "startMonth": "Sep",
-          "startYear": 2020,
-          "endMonth": "Dec",
-          "endYear": 2020
         }
       ]
     }
