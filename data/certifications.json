@@ -1,28 +1,17 @@
 {
   "certifications": [
     {
-      "name": "Google Agile Essentials",
-      "month": "Jan",
-      "year": 2025,
-      "url": ""
-    },
-    {
-      "name": "Databricks Data Engineer",
-      "month": "Jun",
-      "year": 2024,
-      "url": ""
-    },
-    {
-      "name": "AWS Solutions Architect Associate",
-      "month": "Mar",
-      "year": 2024,
-      "url": ""
-    },
-    {
       "name": "Bloomberg Market Concepts",
-      "month": "Jun",
-      "year": 2022,
+      "url": ""
+    },
+    {
+      "name": "Docker Foundations Professional",
+      "url": ""
+    },
+    {
+      "name": "GitHub Career Essentials",
       "url": ""
     }
+      
   ]
 }
