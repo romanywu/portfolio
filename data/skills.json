@@ -3,22 +3,32 @@
     { "name": "Java", "logo": "logo_skills/java.svg" },
     { "name": "Python", "logo": "logo_skills/python.svg" },
     { "name": "SQL", "logo": "logo_skills/sql.svg" },
-    { "name": "TypeScript", "logo": "logo_skills/typescript.svg" }
+    { "name": "TypeScript", "logo": "logo_skills/typescript.svg" },
+    { "name": "GraphQL", "logo": "logo_skills/graphql.svg" },
+    { "name": "Bash", "logo": "logo_skills/bash.svg" }
   ],
   "frameworks": [
+    { "name": "Spring", "logo": "logo_skills/springboot.svg" },
+    { "name": "Django", "logo": "logo_skills/django.svg" },
     { "name": "React.js", "logo": "logo_skills/react.svg" },
     { "name": "FastAPI", "logo": "logo_skills/fastapi.svg" },
     { "name": "Node.js", "logo": "logo_skills/nodejs.svg" },
     { "name": "AWS", "logo": "logo_skills/aws.svg" }
   ],
   "technologies": [
+    { "name": "Databricks", "logo": "logo_skills/databricks.svg" },
     { "name": "MySQL", "logo": "logo_skills/mysql.svg" },
+    { "name": "MongoDB", "logo": "logo_skills/mongodb.svg" },
     { "name": "PostgreSQL", "logo": "logo_skills/postgresql.svg" },
-    { "name": "JWT", "logo": "logo_skills/jwt.svg" }
+    { "name": "JWT", "logo": "logo_skills/jwt.svg" },
+    { "name": "Kafka", "logo": "logo_skills/kafka.svg" }
   ],
   "stacks": [
     { "name": "Docker", "logo": "logo_skills/docker.svg" },
+    { "name": "Kubernetes", "logo": "logo_skills/kubernetes.svg" },
+    { "name": "Redis", "logo": "logo_skills/redis.svg" },
     { "name": "Elasticsearch", "logo": "logo_skills/elasticsearch.svg" },
+    { "name": "Kibana", "logo": "logo_skills/kibana.svg" },
     { "name": "GitHub Actions", "logo": "logo_skills/githubactions.svg" }
   ]
 }
