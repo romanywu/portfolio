@@ -7,6 +7,8 @@ type ContentObj = {
   about: boolean;
   education: boolean;
   work: boolean;
+  projects: boolean; // Added projects
+  resume: boolean; // Added resume
   contact: boolean;
   changeContent: (text: string) => void;
 };
@@ -16,6 +18,8 @@ export const Context = React.createContext<ContentObj>({
   about: false,
   education: false,
   work: false,
+  projects: false, // Added projects
+  resume: false, // Added resume
   contact: false,
   changeContent: (text: string) => {},
 });
@@ -49,6 +53,8 @@ const ContentProvider = (props: Props) => {
     about: false,
     education: false,
     work: false,
+    projects: false, // Added projects
+    resume: false, // Added resume
     contact: false,
   });
 
@@ -58,6 +64,8 @@ const ContentProvider = (props: Props) => {
       about: false,
       education: false,
       work: false,
+      projects: false, // Added projects
+      resume: false, // Added resume
       contact: false,
     };
 
@@ -70,6 +78,12 @@ const ContentProvider = (props: Props) => {
         break;
       case "Work":
         newContent.work = true;
+        break;
+      case "Projects": // Added Projects case
+        newContent.projects = true;
+        break;
+      case "Resume": // Added Resume case
+        newContent.resume = true;
         break;
       case "Contact":
         newContent.contact = true;
@@ -86,6 +100,8 @@ const ContentProvider = (props: Props) => {
     about: context.about,
     education: context.education,
     work: context.work,
+    projects: context.projects, // Added projects
+    resume: context.resume, // Added resume
     contact: context.contact,
     changeContent: changeContent,
   };

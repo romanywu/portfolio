@@ -1,0 +1,27 @@
+.resumeContainer {
+  padding: 2rem;
+  text-align: center;
+}
+
+.resumePreview {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures the iframe respects the border radius */
+}
+
+.downloadButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color, #007bff); /* Fallback color */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: var(--primary-hover-color, #0056b3); /* Fallback color */
+}

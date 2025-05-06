@@ -10,6 +10,8 @@ import Education from "../pages/education/Education";
 import Certifications from "../pages/education/Certifications";
 import Skills from "../pages/education/Skills";
 import Work from "../pages/work/Work";
+import Projects from "../pages/projects/Projects"; // Added import
+import Resume from "../pages/resume/Resume"; // Added import
 import Contact from "../pages/contact/Contact";
 
 /**
@@ -84,6 +86,26 @@ const Main = () => {
         <div className={classes.fadeInElement}>
           <div className={classes.centering}>
             <Contact />
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
+
+      {ContentCtx.projects ? ( // Added Projects section
+        <div className={classes.fadeInElement}>
+          <div className={classes.centering}>
+            <Projects />
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
+
+      {ContentCtx.resume ? ( // Added Resume section
+        <div className={classes.fadeInElement}>
+          <div className={classes.centering}>
+            <Resume />
           </div>
         </div>
       ) : (

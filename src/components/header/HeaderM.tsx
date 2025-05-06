@@ -97,6 +97,24 @@ const Header = () => {
             <Nav.Link
               href="#"
               onClick={() => {
+                changeTab("Projects");
+              }}
+              className={`${classes.headerNavLi} ${classes.navbar_color}`}
+            >
+              Projects
+            </Nav.Link>
+            <Nav.Link
+              href="#"
+              onClick={() => {
+                changeTab("Resume");
+              }}
+              className={`${classes.headerNavLi} ${classes.navbar_color}`}
+            >
+              Resume
+            </Nav.Link>
+            <Nav.Link
+              href="#"
+              onClick={() => {
                 changeTab("Contact");
               }}
               className={`${classes.headerNavLi} ${classes.navbar_color}`}

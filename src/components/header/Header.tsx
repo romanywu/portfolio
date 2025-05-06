@@ -90,6 +90,30 @@ const Header = () => {
           <li className={classes.headerNavLi}>
             <button
               className={`${classes.headerNavButton} ${
+                ContentCtx.projects ? classes.buttonActive : ""
+              }`}
+              onClick={() => {
+                changeTab("Projects");
+              }}
+            >
+              Projects
+            </button>
+          </li>
+          <li className={classes.headerNavLi}>
+            <button
+              className={`${classes.headerNavButton} ${
+                ContentCtx.resume ? classes.buttonActive : ""
+              }`}
+              onClick={() => {
+                changeTab("Resume");
+              }}
+            >
+              Resume
+            </button>
+          </li>
+          <li className={classes.headerNavLi}>
+            <button
+              className={`${classes.headerNavButton} ${
                 ContentCtx.contact ? classes.buttonActive : ""
               }`}
               onClick={() => {
