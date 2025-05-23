@@ -5,43 +5,28 @@
       "logo": "logo_companies/mckeil.png",
       "positions": [
         {
-          "title": "Software Engineer",
+          "title": "Business Analyst",
           "company": "McKeil Marine",
           "description": "Financial Technology",
           "startMonth": "June",
           "startYear": 2024,
-          "endMonth": "",
-          "endYear": 0
+          "endMonth": "Apr",
+          "endYear": 2025
         }
       ]
     },
     {
-      "name": "ByteDance",
+      "name": "Shenzhen",
       "logo": "logo_companies/bytedance.png",
       "positions": [
         {
           "title": "Software Engineer",
-          "company": "ByteDance",
-          "description": "E-Commerce Recommendation",
-          "startMonth": "May",
+          "company": "Shenzhen Hongsheng Machinery & Building Materials",
+          "description": "E-Commerce",
+          "startMonth": "Jan",
           "startYear": 2023,
           "endMonth": "Jun",
           "endYear": 2024
-        }
-      ]
-    },
-    {
-      "name": "Apple",
-      "logo": "logo_companies/apple.png",
-      "positions": [
-        {
-          "title": "Software Engineer Intern",
-          "company": "Apple",
-          "description": "Commerce Engineering",
-          "startMonth": "Jan",
-          "startYear": 2023,
-          "endMonth": "Apr",
-          "endYear": 2023
         }
       ]
     },
@@ -51,7 +36,7 @@
       "positions": [
         {
           "title": "Software Engineer Intern",
-          "company": "Harvest Fund",
+          "company": "Harvest Fund Management",
           "description": "Market Data (Quantitative Fund)",
           "startMonth": "Sep",
           "startYear": 2022,
@@ -61,32 +46,17 @@
       ]
     },
     {
-      "name": "ByteDance",
-      "logo": "logo_companies/bytedance.png",
-      "positions": [
-        {
-          "title": "Software Engineer Intern",
-          "company": "ByteDance",
-          "description": "TikTok Search (Frontend)",
-          "startMonth": "May",
-          "startYear": 2022,
-          "endMonth": "Aug",
-          "endYear": 2022
-        }
-      ]
-    },
-    {
       "name": "TnT",
       "logo": "logo_companies/tnt.png",
       "positions": [
         {
-          "title": "Software Engineer Intern",
+          "title": "Associate",
           "company": "T&T Supermarket",
           "description": "Web Development",
           "startMonth": "Sep",
-          "startYear": 2021,
+          "startYear": 2022,
           "endMonth": "Dec",
-          "endYear": 2021
+          "endYear": 2022
         }
       ]
     }
