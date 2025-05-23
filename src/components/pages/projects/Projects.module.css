@@ -1,24 +1,260 @@
+/* McKeil Marine Case Study Styles */
 .projectsContainer {
-  padding: 2rem;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contentTitle {
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.caseStudy {
+  width: 100%;
+}
+
+/* Project Header */
+.projectHeader {
+  margin-bottom: 3rem;
+}
+
+.projectIntro {
   text-align: center;
 }
 
-.projectsGrid {
+.projectTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.projectSubtitle {
+  font-size: 1.125rem;
+  color: #666666;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.imageCaption {
+  font-size: 0.875rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Project Details Grid */
+.projectDetails {
+  margin-bottom: 2rem;
+}
+
+.detailsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
-.projectItem {
-  border: 1px solid #ccc;
-  padding: 1rem;
+.detailBox {
+  padding: 1.5rem;
+  background: #f8f9fa;
   border-radius: 8px;
+  border-left: 4px solid #007bff;
 }
 
-.projectItem img,
-.projectItem video {
-  max-width: 100%;
+.detailTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Execution Content */
+.executionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.executionItem {
+  text-align: center;
+}
+
+.executionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.executionImage {
+  width: 100%;
+  max-width: 900px;
   height: auto;
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+
+.codeImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.codeImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Finished Product */
+.finishedProduct {
+  text-align: center;
+}
+
+.finishedImage {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+/* Testimonial */
+.testimonial {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.testimonialContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonialImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #555;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+  text-align: left;
+}
+
+.testimonialAuthor {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-style: normal;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Text Styling */
+.justify {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -0.05em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  .projectsContainer {
+    padding: 1rem;
+  }
+  
+  .projectTitle {
+    font-size: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .detailsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .codeImages {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonial {
+    padding: 1rem;
+  }
+  
+  .quote {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projectTitle {
+    font-size: 1.75rem;
+  }
+  
+  .executionTitle {
+    font-size: 1.25rem;
+  }
+  
+  .detailTitle {
+    font-size: 1rem;
+  }
 }
