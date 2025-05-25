@@ -1,13 +1,30 @@
 {
   "jobs": [
     {
+      "name": "DCT",
+      "logo": "logo_companies/DCTLife.png",
+      "positions": [
+        {
+          "title": "Software Engineer",
+          "company": "DCT Life",
+          "type": "Full-time",
+          "location": "Remote",
+          "description": "Data Platform",
+          "startMonth": "Apr",
+          "startYear": 2025
+        }
+      ]
+    },
+    {
       "name": "McKeil",
       "logo": "logo_companies/mckeil.png",
       "positions": [
         {
           "title": "Business Analyst",
           "company": "McKeil Marine",
-          "description": "Financial Technology",
+          "type": "Full-time",
+          "location": "Burlington, ON",
+          "description": "Machine Learning",
           "startMonth": "June",
           "startYear": 2024,
           "endMonth": "Apr",
@@ -17,12 +34,14 @@
     },
     {
       "name": "Shenzhen",
-      "logo": "logo_companies/bytedance.png",
+      "logo": "logo_companies/Hongsheng.png",
       "positions": [
         {
           "title": "Software Engineer",
           "company": "Shenzhen Hongsheng Machinery & Building Materials",
-          "description": "E-Commerce",
+          "type": "Full-time",
+          "location": "Shenzhen, China",
+          "description": "Process Automation",
           "startMonth": "Jan",
           "startYear": 2023,
           "endMonth": "Jun",
@@ -35,8 +54,10 @@
       "logo": "logo_companies/harvest.png",
       "positions": [
         {
-          "title": "Software Engineer Intern",
+          "title": "Operations Intern",
           "company": "Harvest Fund Management",
+          "type": "Internship",
+          "location": "Shanghai, China",
           "description": "Market Data (Quantitative Fund)",
           "startMonth": "Sep",
           "startYear": 2022,
@@ -52,11 +73,30 @@
         {
           "title": "Associate",
           "company": "T&T Supermarket",
-          "description": "Web Development",
+          "type": "Part-time",
+          "location": "Toronto, ON",
+          "description": "Groceries & Retail",
           "startMonth": "Sep",
           "startYear": 2022,
           "endMonth": "Dec",
           "endYear": 2022
+        }
+      ]
+    },
+    {
+      "name": "Habitat",
+      "logo": "logo_companies/habitat.png",
+      "positions": [
+        {
+          "title": "Volunteer",
+          "company": "Habitat for Humanity",
+          "type": "Part-time",
+          "location": "Toronto, ON",
+          "description": "Web Development",
+          "startMonth": "Sep",
+          "startYear": 2018,
+          "endMonth": "Feb",
+          "endYear": 2020
         }
       ]
     }
