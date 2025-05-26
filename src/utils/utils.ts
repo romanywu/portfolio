@@ -76,13 +76,13 @@ export const loadCompanies = (data: any): Company[] => {
       const newJob = new Job(
         job.title,
         job.company,
-        job.type,
-        job.location,
+        job.type || "",
+        job.location || "",
         job.description,
         job.startMonth,
         job.startYear,
-        job.endMonth,
-        job.endYear
+        job.endMonth || "",
+        job.endYear || 0
       );
       companyJobs.push(newJob);
     }

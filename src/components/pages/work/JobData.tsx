@@ -25,8 +25,8 @@ type JobDataProps = {
 const JobData = ({ job }: JobDataProps) => {
   return (
     <>
-      <p className={classes.info}>{job.type}</p>
-      <p className={classes.info}>{job.location}</p>
+      {job.type && <p className={classes.info}>{job.type}</p>}
+      {job.location && <p className={classes.info}>{job.location}</p>}
       <p className={classes.description}>{job.description}</p>
       {job.endMonth === "" && job.endYear === 0 ? (
         <p className={classes.dates}>

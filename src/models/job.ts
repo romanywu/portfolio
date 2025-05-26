@@ -12,13 +12,13 @@ class Job {
   constructor(
     title: string,
     company: string,
-    type: string,
-    location: string,
+    type: string = "",
+    location: string = "",
     description: string,
     startMonth: string,
     startYear: number,
-    endMonth: string,
-    endYear: number
+    endMonth: string = "",
+    endYear: number = 0
   ) {
     this.title = title;
     this.company = company;
