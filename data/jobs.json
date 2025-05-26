@@ -5,11 +5,10 @@
       "logo": "logo_companies/DCTLife.png",
       "positions": [
         {
-          "title": "Software Engineer",
+          "title": "Data Engineer",
           "company": "DCT Life",
           "type": "Full-time",
           "location": "Remote",
-          "description": "Data Platform",
           "startMonth": "Apr",
           "startYear": 2025
         }
@@ -24,7 +23,6 @@
           "company": "McKeil Marine",
           "type": "Full-time",
           "location": "Burlington, ON",
-          "description": "Machine Learning",
           "startMonth": "June",
           "startYear": 2024,
           "endMonth": "Apr",
@@ -37,11 +35,10 @@
       "logo": "logo_companies/Hongsheng.png",
       "positions": [
         {
-          "title": "Software Engineer",
+          "title": "Data Analyst",
           "company": "Shenzhen Hongsheng Machinery & Building Materials",
           "type": "Full-time",
           "location": "Shenzhen, China",
-          "description": "Process Automation",
           "startMonth": "Jan",
           "startYear": 2023,
           "endMonth": "Jun",
@@ -54,7 +51,7 @@
       "logo": "logo_companies/harvest.png",
       "positions": [
         {
-          "title": "Operations Intern",
+          "title": "Operations Analyst Intern",
           "company": "Harvest Fund Management",
           "type": "Internship",
           "location": "Shanghai, China",
@@ -75,7 +72,6 @@
           "company": "T&T Supermarket",
           "type": "Part-time",
           "location": "Toronto, ON",
-          "description": "Groceries & Retail",
           "startMonth": "Sep",
           "startYear": 2022,
           "endMonth": "Dec",
@@ -92,7 +88,6 @@
           "company": "Habitat for Humanity",
           "type": "Part-time",
           "location": "Toronto, ON",
-          "description": "Web Development",
           "startMonth": "Sep",
           "startYear": 2018,
           "endMonth": "Feb",
