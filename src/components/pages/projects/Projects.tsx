@@ -6,6 +6,43 @@ const Projects: React.FC = () => {
     <div className={classes.projectsContainer}>
       <h4 className={classes.contentTitle}>Featured Case Study</h4>
       
+      {/* Gemini Enhancer Chrome Extension */}
+      <div className={classes.caseStudy}>
+        <div className={classes.projectHeader}>
+          <div className={classes.projectIntro}>
+            <h2 className={classes.projectTitle}>Gemini Enhancer Chrome Extension</h2>
+            <p className={classes.projectSubtitle}>
+              <a href="https://github.com/romanywu/Gemini-Enhancer" target="_blank" rel="noopener noreferrer">
+                GitHub: romanywu/Gemini-Enhancer
+              </a>
+            </p>
+            <p className={classes.projectSubtitle}>
+              A Chrome extension that enhances your experience with Gemini (gemini.google.com) by adding a follow-up button and custom slash commands. Select text to quickly insert citations, or type <code>/</code> in chat to use or create custom prompt shortcuts. All data is stored locally and never leaves your device.
+            </p>
+          </div>
+        </div>
+        <section className={classes.section}>
+          <h3 className={classes.sectionTitle}>Features</h3>
+          <ul>
+            <li><b>Follow-up Button:</b> Select any text and click the "Follow-up" button to insert it as a citation in Gemini's chat input.</li>
+            <li><b>Slash Commands:</b> Type <code>/</code> to access default and custom prompt shortcuts (e.g., /translate, /explain, /summarize, etc.).</li>
+            <li><b>Custom Commands:</b> Add your own slash commands with prompt templates using the extension popup.</li>
+            <li><b>Modern UI:</b> Automatic dark/light theme, smooth animations, and responsive design.</li>
+            <li><b>Privacy:</b> No personal data is collected; all settings and commands are stored locally.</li>
+          </ul>
+        </section>
+        <section className={classes.section}>
+          <h3 className={classes.sectionTitle}>Installation</h3>
+          <ol>
+            <li>Visit <a href="https://github.com/romanywu/Gemini-Enhancer" target="_blank" rel="noopener noreferrer">the GitHub repository</a>.</li>
+            <li>Download or clone the repo.</li>
+            <li>Open <code>chrome://extensions/</code> in Chrome and enable Developer Mode.</li>
+            <li>Click "Load unpacked" and select the <code>Chrome</code> folder from the repo.</li>
+            <li>The extension will be active on <b>gemini.google.com</b>.</li>
+          </ol>
+        </section>
+      </div>
+
       {/* McKeil Marine Case Study */}
       <div className={classes.caseStudy}>
         <div className={classes.projectHeader}>
