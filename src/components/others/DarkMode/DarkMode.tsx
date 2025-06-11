@@ -22,7 +22,13 @@ import classes from "./DarkMode.module.css";
  *
  */
 const DarkMode = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ||
+      (window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light")
+  );
 
   const setDarkMode = () => {
     document.querySelector("body")?.setAttribute("data-theme", "dark");
@@ -48,7 +54,30 @@ const DarkMode = () => {
     const localTheme = localStorage.getItem("theme");
     if (localTheme) {
       document.querySelector("body")?.setAttribute("data-theme", localTheme);
+      setTheme(localTheme);
+    } else {
+      // Apply system preference if no local storage theme is set
+      const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = systemPrefersDark ? 'dark' : 'light';
+      document.querySelector("body")?.setAttribute("data-theme", initialTheme);
+      setTheme(initialTheme);
     }
+
+    // Listen for changes in system preference
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e: MediaQueryListEvent) => {
+      // Only change if no theme is manually set in localStorage
+      if (!localStorage.getItem("theme")) {
+        const newTheme = e.matches ? 'dark' : 'light';
+        document.querySelector("body")?.setAttribute("data-theme", newTheme);
+        setTheme(newTheme);
+      }
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    // Cleanup listener on component unmount
+    return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
   return (

@@ -1,68 +1,102 @@
 :root {
-  --body_background: #f9f9f9;
-  --body_background_end: #cecece;
-  --body_color: #242424;
-  --bar: #eee;
-  --header_color: #333;
-  --proficency: lightgrey;
+  --body_background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --body_color: #333; /* Darker text for better readability */
+  --bar: #e0e0e0; /* Softer bar color */
+  --header_color: #2c3e50; /* Professional header color */
+  --proficency: #d0d0d0; /* Lighter proficiency bar */
   --button: white;
-  --button_background: rgb(146, 146, 146);
-  --button_hover: rgb(117, 117, 117);
-  --input_background: #f9f9f9;
+  --button_background: #3498db; /* A more vibrant button color */
+  --button_hover: #2980b9; /* Darker hover for button */
+  --input_background: #ffffff; /* Clean white input background */
   --icons_color: none;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+
+  /* Status badge colors */
+  --status-completed-bg: #4CAF50;
+  --status-completed-text: white;
+  --status-inprogress-bg: #FFC107;
+  --status-inprogress-text: #333333; /* Dark text for light yellow */
+  --status-generic-bg: #757575; /* For other statuses */
+  --status-generic-text: white;
 }
 
 [data-theme="dark"] {
-  --body_background: #222831;
-  --body_background_end: #323944;
-  --body_color: #76abae;
-  --bar: #31363f;
-  --header_color: #76abae;
-  --proficency: #21252c;
-  --button: #76abae;
-  --button_background: #21252c;
-  --button_hover: #171b20;
-  --input_background: #3a3f47;
-  --icons_color: invert(63%) sepia(27%) saturate(384%) hue-rotate(135deg)
-    brightness(97%) contrast(90%);
+  --body_background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Dark theme gradient */
+  --body_color: #ecf0f1; /* Light text for dark theme */
+  --bar: #3f5169; /* Dark theme bar color */
+  --header_color: #ecf0f1;
+  --proficency: #4a627a; /* Dark theme proficiency bar */
+  --button: #ecf0f1;
+  --button_background: #3498db; /* Consistent button color */
+  --button_hover: #2980b9;
+  --input_background: #3f5169; /* Dark theme input background */
+  --icons_color: invert(93%) sepia(8%) saturate(92%) hue-rotate(173deg)
+    brightness(105%) contrast(92%); /* Adjusted icon color for dark theme */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Dark theme shadow */
+
+  /* Status badge colors for dark theme */
+  --status-completed-bg: #388E3C; /* Darker green */
+  --status-completed-text: #FFFFFF;
+  --status-inprogress-bg: #FFA000; /* Darker amber/orange */
+  --status-inprogress-text: #212121; /* Dark text for better contrast on amber */
+  --status-generic-bg: #BDBDBD; /* Lighter grey for dark theme */
+  --status-generic-text: #212121; /* Dark text for light grey */
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: var(--body_background); /* Apply gradient background */
+  color: var(--body_color);
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: #dddddd;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
+    monospace; /* Clearer monospace font */
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
-  background-color: #f9f9f9;
+  width: 10px; /* Slightly thinner scrollbar */
+  background-color: transparent; /* Transparent track */
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: lightgrey;
+  background-color: var(--bar); /* Use bar color for thumb */
+  border: 2px solid var(--body_background); /* Creates a 'floating' effect */
 }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
 
 #root {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+/* Add a general transition for interactive elements */
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Style for links to make them more appealing */
+a {
+  color: var(--button_background);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--button_hover);
 }

@@ -1,26 +1,23 @@
 import React from 'react';
 import classes from './Projects.module.css';
+import ProjectCaseStudy from './ProjectCaseStudy'; // Import the new component
 
-const Projects: React.FC = () => {
-  return (
-    <div className={classes.projectsContainer}>
-      <h4 className={classes.contentTitle}>Featured Case Study</h4>
-      
-      {/* Gemini Enhancer Chrome Extension */}
-      <div className={classes.caseStudy}>
-        <div className={classes.projectHeader}>
-          <div className={classes.projectIntro}>
-            <h2 className={classes.projectTitle}>Gemini Enhancer Chrome Extension</h2>
-            <p className={classes.projectSubtitle}>
-              <a href="https://github.com/romanywu/Gemini-Enhancer" target="_blank" rel="noopener noreferrer">
-                GitHub: romanywu/Gemini-Enhancer
-              </a>
-            </p>
-            <p className={classes.projectSubtitle}>
-              A Chrome extension that enhances your experience with Gemini (gemini.google.com) by adding a follow-up button and custom slash commands. Select text to quickly insert citations, or type <code>/</code> in chat to use or create custom prompt shortcuts. All data is stored locally and never leaves your device.
-            </p>
-          </div>
-        </div>
+const projectsData = [
+  {
+    id: 'gemini-enhancer',
+    title: 'Gemini Enhancer (Chrome Extension)',
+    subtitle: (
+      <a href="https://github.com/romanywu/Gemini-Enhancer" target="_blank" rel="noopener noreferrer">
+        GitHub: romanywu/Gemini-Enhancer
+      </a>
+    ),
+    introDescription: (
+      <>
+        A Chrome extension that enhances your experience with Gemini (gemini.google.com) by adding a follow-up button and custom slash commands. Select text to quickly insert citations, or type <code>/</code> in chat to use or create custom prompt shortcuts. All data is stored locally and never leaves your device.
+      </>
+    ),
+    content: (
+      <>
         <section className={classes.section}>
           <h3 className={classes.sectionTitle}>Features</h3>
           <ul>
@@ -41,26 +38,25 @@ const Projects: React.FC = () => {
             <li>The extension will be active on <b>gemini.google.com</b>.</li>
           </ol>
         </section>
-      </div>
-
-      {/* McKeil Marine Case Study */}
-      <div className={classes.caseStudy}>
-        <div className={classes.projectHeader}>
-          <div className={classes.projectIntro}>
-            <h2 className={classes.projectTitle}>McKeil Marine</h2>
-            <p className={classes.projectSubtitle}>
-              McKeil Marine is a shipping company operating across the Great Lakes, St. 
-              Lawrence Seaway, east coast and Canadian Arctic since 1956.
-            </p>
-            <img 
-              src="/projects/huron-spirit.jpg" 
-              alt="McKeil Marine - Huron Spirit" 
-              className={classes.heroImage}
-            />
-            <p className={classes.imageCaption}>Photograph courtesy of mckeil.com</p>
-          </div>
-        </div>
-
+      </>
+    ),
+  },
+  {
+    id: 'mckeil-marine',
+    title: 'WhiteCap (Accounting ERP @ McKeil Marine)',
+    introDescription: (
+      <p>
+        McKeil Marine is a shipping company operating across the Great Lakes, St. 
+        Lawrence Seaway, east coast and Canadian Arctic since 1956.
+      </p>
+    ),
+    heroImage: {
+      src: "/projects/huron-spirit.jpg",
+      alt: "McKeil Marine - Huron Spirit",
+      caption: "Photograph courtesy of mckeil.com"
+    },
+    content: (
+      <>
         {/* The Project Section */}
         <section className={classes.section}>
           <h3 className={classes.sectionTitle}>The Project</h3>
@@ -82,7 +78,7 @@ const Projects: React.FC = () => {
                   and email, streamline trip management process and gather data to increase efficiency.
                 </p>
               </div>
-                          </div>
+            </div>
           </div>
         </section>
 
@@ -169,7 +165,25 @@ const Projects: React.FC = () => {
 
           </div>
         </section>
-      </div>
+      </>
+    ),
+  }
+];
+
+const Projects: React.FC = () => {
+  return (
+    <div className={classes.projectsContainer}>
+      {projectsData.map(project => (
+        <ProjectCaseStudy
+          key={project.id}
+          title={project.title}
+          subtitle={project.subtitle}
+          introDescription={project.introDescription}
+          heroImage={project.heroImage}
+        >
+          {project.content}
+        </ProjectCaseStudy>
+      ))}
     </div>
   );
 };
