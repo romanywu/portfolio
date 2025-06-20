@@ -2,13 +2,13 @@
   "jobs": [
     {
       "name": "DCT",
-      "logo": "logo_companies/DCTLife.png",
+      "logo": "logo_companies/DCTSolutions.png",
       "positions": [
         {
-          "title": "Data Analyst",
-          "company": "DCT Life",
+          "title": "Software Developer",
+          "company": "DCT Solutions",
           "type": "Full-time",
-          "location": "Remote",
+          "location": "Toronto, ON",
           "startMonth": "Apr",
           "startYear": 2025
         }
@@ -27,71 +27,6 @@
           "startYear": 2024,
           "endMonth": "Apr",
           "endYear": 2025
-        }
-      ]
-    },
-    {
-      "name": "Shenzhen",
-      "logo": "logo_companies/Hongsheng.png",
-      "positions": [
-        {
-          "title": "Data Analyst",
-          "company": "Shenzhen Hongsheng Machinery & Building Materials",
-          "type": "Full-time",
-          "location": "Shenzhen, China",
-          "startMonth": "Jan",
-          "startYear": 2023,
-          "endMonth": "Jun",
-          "endYear": 2024
-        }
-      ]
-    },
-    {
-      "name": "Harvest",
-      "logo": "logo_companies/harvest.png",
-      "positions": [
-        {
-          "title": "Operations Analyst Intern",
-          "company": "Harvest Fund Management",
-          "type": "Internship",
-          "location": "Shanghai, China",
-          "description": "Market Data (Quantitative Fund)",
-          "startMonth": "Sep",
-          "startYear": 2022,
-          "endMonth": "Dec",
-          "endYear": 2022
-        }
-      ]
-    },
-    {
-      "name": "TnT",
-      "logo": "logo_companies/tnt.png",
-      "positions": [
-        {
-          "title": "Associate",
-          "company": "T&T Supermarket",
-          "type": "Part-time",
-          "location": "Toronto, ON",
-          "startMonth": "Sep",
-          "startYear": 2022,
-          "endMonth": "Dec",
-          "endYear": 2022
-        }
-      ]
-    },
-    {
-      "name": "Habitat",
-      "logo": "logo_companies/habitat.png",
-      "positions": [
-        {
-          "title": "Volunteer",
-          "company": "Habitat for Humanity",
-          "type": "Part-time",
-          "location": "Toronto, ON",
-          "startMonth": "Sep",
-          "startYear": 2018,
-          "endMonth": "Feb",
-          "endYear": 2020
         }
       ]
     }
