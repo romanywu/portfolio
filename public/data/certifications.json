@@ -1,18 +1,6 @@
 {
   "certifications": [
     {
-      "name": "Google Agile Essentials",
-      "month": "Jan",
-      "year": 2025,
-      "url": ""
-    },
-    {
-      "name": "Databricks Data Engineer",
-      "month": "Jun",
-      "year": 2024,
-      "url": ""
-    },
-    {
       "name": "AWS Solutions Architect Associate",
       "month": "Mar",
       "year": 2024,
