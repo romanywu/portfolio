@@ -167,6 +167,33 @@ const projectsData = [
         </section>
       </>
     ),
+  },
+  {
+    id: 'leetcode-export-script',
+    title: 'LeetCode Export Script',
+    subtitle: (
+      <a href="https://github.com/romanywu/leetcode-export-script" target="_blank" rel="noopener noreferrer">
+        GitHub: romanywu/leetcode-export-script
+      </a>
+    ),
+    introDescription: (
+      <>
+        A command-line tool to export your solved LeetCode problems into markdown or HTML files, including problem descriptions, solutions, and metadata.
+      </>
+    ),
+    content: (
+      <>
+        <section className={classes.section}>
+          <h3 className={classes.sectionTitle}>Features</h3>
+          <ul>
+            <li><b>Export Formats:</b> Generate Markdown or HTML files for each solved problem.</li>
+            <li><b>Metadata:</b> Includes problem difficulty, tags, and runtime statistics.</li>
+            <li><b>Supports Multiple Languages:</b> Export code solutions in Java, Python, JavaScript, and more.</li>
+            <li><b>Lite CLI:</b> Simple commands and customizable output directory.</li>
+          </ul>
+        </section>
+      </>
+    ),
   }
 ];
 
