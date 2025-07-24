@@ -2,10 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-items: center;
-  padding: 20px;
-  background: linear-gradient(to right, var(--body_background), var(--body_background_end));
+  padding: var(--space-6) var(--space-8);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   color: var(--body_color);
+  transition: all var(--duration-normal) var(--ease-apple);
+  min-height: 80px;
 }
 
 .title {
@@ -20,29 +24,104 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: var(--space-4);
+}
+
+.social_icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3);
+  border-radius: 12px;
+  transition: all var(--duration-fast) var(--ease-apple);
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .social_icon > * {
-  margin: 0 10px;
-  height: 30px;
+  height: 24px;
+  width: 24px;
   filter: var(--icons_color);
+  transition: all var(--duration-fast) var(--ease-apple);
 }
 
-.social_icon > *:hover {
-  transform: scale(1.2);
+.social_icon:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.social_icon:hover > * {
+  transform: scale(1.1);
+}
+
+.social_icon:active {
+  transform: translateY(-1px);
+  transition-duration: var(--duration-instant);
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .mainFooter {
+  background: rgba(28, 28, 30, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .social_icon {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .social_icon:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  .mainFooter {
+    padding: var(--space-5) var(--space-6);
+    min-height: 70px;
+  }
+  
+  .social_icon {
+    padding: var(--space-2);
+  }
+  
+  .social_icon > * {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
   .mainFooter {
     justify-content: center;
-    padding: 10px;
-    font-size: 12px;
-    min-height: 7vh;
+    padding: var(--space-4);
+    font-size: var(--font-size-sm);
+    min-height: 60px;
+    gap: var(--space-4);
+  }
+
+  .social_icons {
+    gap: var(--space-3);
+  }
+  
+  .social_icon {
+    padding: var(--space-2);
   }
 
   .social_icon > * {
-    height: 7vmin;
+    height: 18px;
+    width: 18px;
   }
 }
-/* Mobile */
+
+/* Safari-specific fixes */
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  .mainFooter {
+    -webkit-transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
+  }
+}

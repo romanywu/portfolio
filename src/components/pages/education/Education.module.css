@@ -1,30 +1,64 @@
 .contentTitle {
-  font-weight: bold;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--header_color);
+  margin: 0 0 var(--space-6) 0;
+  text-align: left;
 }
 
 .education {
-  margin: 20px 0;
-  padding: 10px;
+  margin: 0 0 var(--space-8) 0;
+  padding: var(--space-4);
+  border: 1px solid var(--color-gray-200);
+  border-radius: 8px;
+  transition: all var(--duration-fast) var(--ease-apple);
+}
+
+.education:hover {
+  border-color: var(--color-gray-300);
+  box-shadow: var(--shadow);
 }
 
 .university {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--header_color);
+  margin: 0 0 var(--space-2) 0;
 }
 
 .degree {
-  font-size: 17px;
-  margin-bottom: 5px;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-700);
+  margin: 0 0 var(--space-2) 0;
 }
 
 .dates {
-  font-size: 14px;
-  color: #8b8b8b;
-  margin-bottom: 5px;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  margin: 0;
 }
 
 .grade {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .education {
+  border-color: var(--color-gray-700);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+[data-theme="dark"] .education:hover {
+  border-color: var(--color-gray-600);
+}
+
+[data-theme="dark"] .degree {
+  color: var(--color-gray-300);
+}
+
+[data-theme="dark"] .dates {
+  color: var(--color-gray-400);
 }

@@ -1,98 +1,107 @@
 import { useEffect, useState } from "react";
 import classes from "./DarkMode.module.css";
 
-/**
- * DarkMode Component
- *
- * This component renders a dark mode toggle switch.
- * It uses CSS modules for styling.
- *
- * The component maintains a state variable 'theme' to keep track of the current theme.
- * The initial state is set to the value of 'theme' in localStorage, or 'light' if 'theme' is not in localStorage.
- *
- * The component includes two functions, 'setDarkMode' and 'setLightMode', to change the theme.
- * These functions update the 'data-theme' attribute on the body element, the 'theme' item in localStorage, and the 'theme' state variable.
- *
- * The 'toggleTheme' function is attached to the 'onChange' event of the checkbox.
- * It calls 'setDarkMode' if the checkbox is checked, and 'setLightMode' if the checkbox is not checked.
- *
- * The component uses the useEffect hook to set the 'data-theme' attribute on the body element to the value of 'theme' in localStorage when the component mounts.
- *
- * The checkbox is checked if the 'theme' state variable is 'dark'.
- *
- */
+type ThemeOption = "auto" | "light" | "dark";
+
 const DarkMode = () => {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ||
-      (window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light")
+  const [themePreference, setThemePreference] = useState<ThemeOption>(
+    (localStorage.getItem("themePreference") as ThemeOption) || "auto"
   );
+  const [actualTheme, setActualTheme] = useState<"light" | "dark">("light");
 
-  const setDarkMode = () => {
-    document.querySelector("body")?.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
-    setTheme("dark");
+  const applyTheme = (theme: "light" | "dark") => {
+    document.querySelector("body")?.setAttribute("data-theme", theme);
+    setActualTheme(theme);
   };
 
-  const setLightMode = () => {
-    document.querySelector("body")?.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
-    setTheme("light");
-  };
-
-  const toggleTheme = (event: any) => {
-    if (event.target.checked) {
-      setDarkMode();
-    } else {
-      setLightMode();
+  const getSystemTheme = (): "light" | "dark" => {
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
     }
+    return "light";
+  };
+
+  const updateActualTheme = (preference: ThemeOption) => {
+    let newTheme: "light" | "dark";
+    
+    switch (preference) {
+      case "dark":
+        newTheme = "dark";
+        break;
+      case "light":
+        newTheme = "light";
+        break;
+      case "auto":
+      default:
+        newTheme = getSystemTheme();
+        break;
+    }
+    
+    applyTheme(newTheme);
+  };
+
+  const handleThemeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const newPreference = event.target.value as ThemeOption;
+    setThemePreference(newPreference);
+    localStorage.setItem("themePreference", newPreference);
+    updateActualTheme(newPreference);
   };
 
   useEffect(() => {
-    const localTheme = localStorage.getItem("theme");
-    if (localTheme) {
-      document.querySelector("body")?.setAttribute("data-theme", localTheme);
-      setTheme(localTheme);
-    } else {
-      // Apply system preference if no local storage theme is set
-      const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initialTheme = systemPrefersDark ? 'dark' : 'light';
-      document.querySelector("body")?.setAttribute("data-theme", initialTheme);
-      setTheme(initialTheme);
+    // Migration from old theme system
+    const oldTheme = localStorage.getItem("theme");
+    const newThemePreference = localStorage.getItem("themePreference");
+    
+    let initialPreference: ThemeOption = "auto";
+    
+    if (newThemePreference) {
+      // New system exists, use it
+      initialPreference = newThemePreference as ThemeOption;
+    } else if (oldTheme) {
+      // Migrate from old system
+      initialPreference = oldTheme === "dark" ? "dark" : "light";
+      localStorage.setItem("themePreference", initialPreference);
+      localStorage.removeItem("theme"); // Clean up old key
     }
+    
+    setThemePreference(initialPreference);
+    updateActualTheme(initialPreference);
 
     // Listen for changes in system preference
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (e: MediaQueryListEvent) => {
-      // Only change if no theme is manually set in localStorage
-      if (!localStorage.getItem("theme")) {
-        const newTheme = e.matches ? 'dark' : 'light';
-        document.querySelector("body")?.setAttribute("data-theme", newTheme);
-        setTheme(newTheme);
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleSystemChange = (e: MediaQueryListEvent) => {
+      // Get the current preference from localStorage to avoid stale closure
+      const currentPreference = (localStorage.getItem("themePreference") as ThemeOption) || "auto";
+      // Only apply system changes when preference is "auto"
+      if (currentPreference === "auto") {
+        const newTheme = e.matches ? "dark" : "light";
+        applyTheme(newTheme);
       }
     };
 
-    mediaQuery.addEventListener('change', handleChange);
+    mediaQuery.addEventListener("change", handleSystemChange);
 
     // Cleanup listener on component unmount
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
+    return () => mediaQuery.removeEventListener("change", handleSystemChange);
+  }, []); // Remove themePreference from dependencies to avoid infinite re-renders
 
   return (
-    <div className={classes.dark_mode}>
-      <input
-        className={classes.dark_mode_input}
-        type="checkbox"
-        id="darkmode-toggle"
-        onChange={toggleTheme}
-        checked={theme === "dark"}
-      />
-      <label
-        className={classes.dark_mode_label}
-        htmlFor="darkmode-toggle"
-      ></label>
+    <div className={classes.themeSelector}>
+      <label htmlFor="theme-select" className={classes.themeLabel}>
+        Theme:
+      </label>
+      <div className={classes.selectWrapper}>
+        <select
+          id="theme-select"
+          className={classes.themeSelect}
+          value={themePreference}
+          onChange={handleThemeChange}
+        >
+          <option value="auto">Device default</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
     </div>
   );
 };

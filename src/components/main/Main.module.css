@@ -2,42 +2,48 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to right, var(--body_background), var(--body_background_end));
-  padding: 15px;
+  background: var(--body_background);
+  padding: var(--space-6);
   flex: 1;
   overflow-y: auto;
   color: var(--body_color);
+  transition: background var(--duration-normal) var(--ease-apple);
 }
 
 .centering {
-  padding-top: 15px;
-  padding-left: 5vh;
-  padding-right: 5vh;
+  padding-top: var(--space-6);
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+  width: 100%;
 }
 
 .centeringLanguages {
-  padding-top: 15px;
-  padding-left: 9vh;
-  padding-right: 9vh;
+  padding-top: var(--space-6);
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+  width: 100%;
 }
 
 @media only screen and (min-width: 1200px) {
-  /*Text more centered in width >= 1200px screens*/
   .centering {
-    padding-left: 50vh;
-    padding-right: 50vh;
+    padding-left: var(--space-16);
+    padding-right: var(--space-16);
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .centeringLanguages {
-    padding-left: 60vh;
-    padding-right: 60vh;
+    padding-left: var(--space-20);
+    padding-right: var(--space-20);
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-12px);
   }
   to {
     opacity: 1;
@@ -46,18 +52,38 @@
 }
 
 .fadeInElement {
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn var(--duration-slower) var(--ease-apple);
 }
 
-/* Mobile */
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .fadeInElement {
+    animation: none;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile optimizations */
 @media only screen and (max-width: 600px) {
   .main {
     min-height: 100vh;
+    padding: var(--space-4);
+  }
+
+  .centering {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
   }
 
   .centeringLanguages {
-    padding-left: 3vh;
-    padding-right: 3vh;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
   }
 }
-/* Mobile */
+
+.educationSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}

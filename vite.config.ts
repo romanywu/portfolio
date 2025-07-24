@@ -8,4 +8,25 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  build: {
+    // Performance optimizations
+    target: 'es2015',
+    minify: 'esbuild',
+    cssMinify: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+        },
+      },
+    },
+    // Optimize chunk size
+    chunkSizeWarningLimit: 1000,
+  },
+  // Enable CSS code splitting
+  css: {
+    devSourcemap: true,
+  },
+  // Preload critical assets
+  assetsInclude: ['**/*.svg', '**/*.png', '**/*.jpg', '**/*.jpeg'],
 })

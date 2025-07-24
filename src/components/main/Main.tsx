@@ -58,14 +58,16 @@ const Main = () => {
 
       {ContentCtx.education ? (
         <div className={classes.fadeInElement}>
-          <div className={classes.centering}>
-            <Education />
-          </div>
-          <div className={classes.centering}>
-            <Skills />
-          </div>
-          <div className={classes.centering}>
-            <Certifications />
+          <div className={classes.educationSection}>
+            <div className={classes.centering}>
+              <Education />
+            </div>
+            <div className={classes.centering}>
+              <Skills />
+            </div>
+            <div className={classes.centering}>
+              <Certifications />
+            </div>
           </div>
         </div>
       ) : (

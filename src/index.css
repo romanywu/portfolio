@@ -1,60 +1,144 @@
 :root {
-  --body_background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  --body_color: #333; /* Darker text for better readability */
-  --bar: #e0e0e0; /* Softer bar color */
-  --header_color: #2c3e50; /* Professional header color */
-  --proficency: #d0d0d0; /* Lighter proficiency bar */
+  /* Apple-inspired color palette */
+  --color-primary: #007AFF; /* Apple blue */
+  --color-primary-dark: #0056CC;
+  --color-secondary: #34C759; /* Apple green */
+  --color-accent: #FF9500; /* Apple orange */
+  
+  /* Neutral grays (Apple's approach) */
+  --color-gray-50: #F9F9F9;
+  --color-gray-100: #F0F0F0;
+  --color-gray-200: #E5E5E5;
+  --color-gray-300: #D4D4D4;
+  --color-gray-400: #A3A3A3;
+  --color-gray-500: #737373;
+  --color-gray-600: #525252;
+  --color-gray-700: #404040;
+  --color-gray-800: #262626;
+  --color-gray-900: #171717;
+
+  /* Subtle Apple-style gradients */
+  --body_background: linear-gradient(180deg, #FAFAFA 0%, #F5F5F5 100%);
+  --body_color: var(--color-gray-800);
+  --bar: var(--color-gray-300);
+  --header_color: var(--color-gray-900);
+  --proficency: var(--color-gray-200);
   --button: white;
-  --button_background: #3498db; /* A more vibrant button color */
-  --button_hover: #2980b9; /* Darker hover for button */
-  --input_background: #ffffff; /* Clean white input background */
+  --button_background: var(--color-primary);
+  --button_hover: var(--color-primary-dark);
+  --input_background: var(--color-gray-50);
   --icons_color: none;
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06); /* Apple-style layered shadows */
+
+  /* Apple 8-point grid system */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+  --space-20: 5rem;    /* 80px */
+  --space-24: 6rem;    /* 96px */
+
+  /* Apple typography scale - adjusted for web */
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px - Standard web base size */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  --font-size-4xl: 2.25rem;    /* 36px */
+  --font-size-5xl: 3rem;       /* 48px */
+  --font-size-6xl: 3.75rem;    /* 60px */
+  --font-size-7xl: 4.5rem;     /* 72px */
+  --font-size-8xl: 6rem;       /* 96px */
+  --font-size-9xl: 8rem;       /* 128px */
+
+  /* Apple font weights */
+  --font-weight-ultralight: 100;
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-heavy: 800;
+  --font-weight-black: 900;
+
+  /* Apple line heights */
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.47; /* Apple's preferred line height */
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Apple easing curves */
+  --ease-apple: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-apple-in: cubic-bezier(0.42, 0, 1, 1);
+  --ease-apple-out: cubic-bezier(0, 0, 0.58, 1);
+  --ease-apple-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+
+  /* Refined animation durations */
+  --duration-instant: 0.1s;
+  --duration-fast: 0.2s;
+  --duration-normal: 0.3s;
+  --duration-slow: 0.5s;
+  --duration-slower: 0.8s;
 
   /* Status badge colors */
-  --status-completed-bg: #4CAF50;
+  --status-completed-bg: var(--color-secondary);
   --status-completed-text: white;
-  --status-inprogress-bg: #FFC107;
-  --status-inprogress-text: #333333; /* Dark text for light yellow */
-  --status-generic-bg: #757575; /* For other statuses */
+  --status-inprogress-bg: var(--color-accent);
+  --status-inprogress-text: white;
+  --status-generic-bg: var(--color-gray-500);
   --status-generic-text: white;
 }
 
 [data-theme="dark"] {
-  --body_background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Dark theme gradient */
-  --body_color: #ecf0f1; /* Light text for dark theme */
-  --bar: #3f5169; /* Dark theme bar color */
-  --header_color: #ecf0f1;
-  --proficency: #4a627a; /* Dark theme proficiency bar */
-  --button: #ecf0f1;
-  --button_background: #3498db; /* Consistent button color */
-  --button_hover: #2980b9;
-  --input_background: #3f5169; /* Dark theme input background */
+  /* Apple-style dark theme */
+  --body_background: linear-gradient(180deg, #1C1C1E 0%, #000000 100%);
+  --body_color: var(--color-gray-100);
+  --bar: var(--color-gray-600);
+  --header_color: var(--color-gray-50);
+  --proficency: var(--color-gray-700);
+  --button: white;
+  --button_background: var(--color-primary);
+  --button_hover: var(--color-primary-dark);
+  --input_background: var(--color-gray-800);
   --icons_color: invert(93%) sepia(8%) saturate(92%) hue-rotate(173deg)
-    brightness(105%) contrast(92%); /* Adjusted icon color for dark theme */
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Dark theme shadow */
+    brightness(105%) contrast(92%);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
 
   /* Status badge colors for dark theme */
-  --status-completed-bg: #388E3C; /* Darker green */
-  --status-completed-text: #FFFFFF;
-  --status-inprogress-bg: #FFA000; /* Darker amber/orange */
-  --status-inprogress-text: #212121; /* Dark text for better contrast on amber */
-  --status-generic-bg: #BDBDBD; /* Lighter grey for dark theme */
-  --status-generic-text: #212121; /* Dark text for light grey */
+  --status-completed-bg: #30A46C; /* Darker Apple green */
+  --status-completed-text: white;
+  --status-inprogress-bg: #FF9500; /* Apple orange */
+  --status-inprogress-text: white;  
+  --status-generic-bg: var(--color-gray-600);
+  --status-generic-text: white;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif; /* Apple system fonts */
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: var(--body_background); /* Apply gradient background */
+  background: var(--body_background);
   color: var(--body_color);
-  transition: background 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  transition: background var(--duration-normal) var(--ease-apple), color var(--duration-normal) var(--ease-apple);
 }
 
 code {
@@ -62,20 +146,36 @@ code {
     monospace; /* Clearer monospace font */
 }
 
+/* Apple-style scrollbar */
 ::-webkit-scrollbar {
-  width: 10px; /* Slightly thinner scrollbar */
-  background-color: transparent; /* Transparent track */
+  width: 8px;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: var(--bar); /* Use bar color for thumb */
-  border: 2px solid var(--body_background); /* Creates a 'floating' effect */
+  border-radius: 4px;
+  background-color: var(--color-gray-400);
+  border: 1px solid transparent;
+  background-clip: content-box;
+  min-height: 24px;
+  transition: background-color var(--duration-fast) var(--ease-apple);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-gray-500);
 }
 
 ::-webkit-scrollbar-track {
-  border-radius: 10px;
   background-color: transparent;
+}
+
+/* Dark theme scrollbar */
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray-600);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-gray-500);
 }
 
 
@@ -85,12 +185,12 @@ code {
   flex-direction: column;
 }
 
-/* Add a general transition for interactive elements */
+/* Apple-style transitions for interactive elements */
 a, button {
-  transition: all 0.2s ease-in-out;
+  transition: all var(--duration-fast) var(--ease-apple);
 }
 
-/* Style for links to make them more appealing */
+/* Apple-style link styling */
 a {
   color: var(--button_background);
   text-decoration: none;
@@ -99,4 +199,140 @@ a {
 a:hover {
   text-decoration: underline;
   color: var(--button_hover);
+}
+
+/* Apple typography utilities */
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+.text-3xl { font-size: var(--font-size-3xl); }
+.text-4xl { font-size: var(--font-size-4xl); }
+.text-5xl { font-size: var(--font-size-5xl); }
+
+.font-ultralight { font-weight: var(--font-weight-ultralight); }
+.font-thin { font-weight: var(--font-weight-thin); }
+.font-light { font-weight: var(--font-weight-light); }
+.font-regular { font-weight: var(--font-weight-regular); }
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-semibold { font-weight: var(--font-weight-semibold); }
+.font-bold { font-weight: var(--font-weight-bold); }
+.font-heavy { font-weight: var(--font-weight-heavy); }
+.font-black { font-weight: var(--font-weight-black); }
+
+.leading-tight { line-height: var(--line-height-tight); }
+.leading-snug { line-height: var(--line-height-snug); }
+.leading-normal { line-height: var(--line-height-normal); }
+.leading-relaxed { line-height: var(--line-height-relaxed); }
+.leading-loose { line-height: var(--line-height-loose); }
+
+/* Performance optimizations */
+.gpu-accelerated {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Image loading optimizations */
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Lazy loading hint */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-apple);
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Focus visible for better keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Comprehensive responsive breakpoints */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  :root {
+    /* Slight adjustments for mobile - keep close to desktop sizes */
+    --font-size-5xl: 2.5rem;     /* 40px */
+    --font-size-4xl: 2rem;       /* 32px */
+    --font-size-3xl: 1.75rem;    /* 28px */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  /* No significant font size changes needed for tablets */
+}
+
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Keep standard font sizes for tablets */
+}
+
+/* Large devices (laptops/desktops, 992px to 1200px) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  :root {
+    /* Optimal viewing on standard laptops */
+    --space-24: 8rem;    /* Increase max spacing */
+    --space-20: 6rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  :root {
+    /* Maximum comfortable reading width */
+    --space-24: 10rem;
+    --space-20: 8rem;
+  }
+}
+
+/* High DPI displays (Retina, 4K, etc.) */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) {
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Landscape orientation optimization */
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  /* Reduce vertical spacing in landscape mode on small screens */
+  .homeText {
+    min-height: 40vh !important;
+    padding: var(--space-8) var(--space-4) !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+  
+  .mainHeader {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
 }

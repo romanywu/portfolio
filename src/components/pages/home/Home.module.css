@@ -1,54 +1,99 @@
-.homeText > h1,
-h2,
-h3,
-h4,
-h5,
-hr {
+.homeText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  min-height: 60vh;
+  padding: var(--space-16) var(--space-8);
 }
 
-.homeText > hr {
-  width: 30vh;
-  margin: 15px auto;
+.heroTitle {
+  font-size: clamp(var(--font-size-3xl), 6vw, var(--font-size-5xl));
+  font-weight: var(--font-weight-bold);
+  color: var(--header_color);
+  margin: 0 0 var(--space-4) 0;
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.02em;
+  animation: fadeInUp var(--duration-slower) var(--ease-apple);
 }
 
-/* Typing Aninmation */
-@keyframes typing {
-  0% {
-    width: 0;
-    margin: 0 auto;
-  }
-  100% {
-    width: 100%;
-    margin: 0 auto;
-  }
+.heroSubtitle {
+  font-size: clamp(var(--font-size-lg), 3vw, var(--font-size-xl));
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-600);
+  margin: 0 0 var(--space-8) 0;
+  line-height: var(--line-height-snug);
+  animation: fadeInUp var(--duration-slower) var(--ease-apple) 0.2s both;
 }
 
-.typing_animation {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 5s steps(80, end);
+.divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  border-radius: 2px;
+  margin: 0 0 var(--space-8) 0;
+  animation: fadeInUp var(--duration-slower) var(--ease-apple) 0.4s both;
 }
 
-.typing_animation::after {
-  content: "|";
-  display: inline-block;
-  animation: blink-caret 0.75s infinite;
+.heroDescription {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-gray-700);
+  margin: 0;
+  line-height: var(--line-height-relaxed);
+  max-width: 600px;
+  animation: fadeInUp var(--duration-slower) var(--ease-apple) 0.6s both;
 }
 
-@keyframes blink-caret {
-  from,
-  to {
+@keyframes fadeInUp {
+  from {
     opacity: 0;
+    transform: translateY(24px);
   }
-  50% {
+  to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Mobile */
+/* Dark theme adjustments */
+[data-theme="dark"] .heroSubtitle {
+  color: var(--color-gray-400);
+}
+
+[data-theme="dark"] .heroDescription {
+  color: var(--color-gray-300);
+}
+
+/* Mobile optimizations */
 @media only screen and (max-width: 600px) {
-  .typing_animation {
-    animation: typing 2.5s steps(50, end);
+  .homeText {
+    min-height: 50vh;
+    padding: var(--space-12) var(--space-4);
+  }
+
+  .heroTitle {
+    margin-bottom: var(--space-3);
+  }
+
+  .heroSubtitle {
+    margin-bottom: var(--space-6);
+  }
+
+  .divider {
+    margin-bottom: var(--space-6);
+  }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .heroTitle,
+  .heroSubtitle,
+  .divider,
+  .heroDescription {
+    animation: none;
+    opacity: 1;
+    transform: translateY(0);
   }
 }

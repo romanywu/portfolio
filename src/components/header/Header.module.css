@@ -3,10 +3,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: var(--space-6) var(--space-8);
   min-height: 12vh;
-  background: linear-gradient(to right, var(--body_background), var(--body_background_end));
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* Safari compatibility */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   color: var(--body_color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all var(--duration-normal) var(--ease-apple);
 }
 
 .headerNavUl {
@@ -14,51 +21,105 @@
   margin: 0;
   padding: 0;
   display: flex;
+  gap: var(--space-8);
 }
 
 .headerNavLi {
-  margin-left: 10px;
-  margin-right: 10px;
+  position: relative;
 }
 
 .headerNavButton {
-  color: var(--header_color);;
+  color: var(--header_color);
   border: none;
-  padding: 0;
+  padding: var(--space-2) var(--space-4);
   background: none;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all var(--duration-fast) var(--ease-apple);
+  position: relative;
 }
 
 .headerNavButton:hover {
-  font-weight: 600;
   color: var(--header_color);
-  border-bottom: 2px solid var(--header_color);
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+.headerNavButton:active {
+  transform: translateY(0);
+  transition-duration: var(--duration-instant);
 }
 
 .buttonActive {
-  font-weight: 600;
-  color: var(--header_color);
-  border-bottom: 2px solid var(--header_color);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  background: rgba(0, 122, 255, 0.1);
+}
+
+.buttonActive:hover {
+  background: rgba(0, 122, 255, 0.15);
 }
 
 .notHomePage {
   justify-content: flex-end;
 }
 
+.notHomePage h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--header_color);
+  margin: 0;
+  margin-right: var(--space-8);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(-8px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .fadeInElement {
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn var(--duration-slow) var(--ease-apple);
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .mainHeader {
+  background: rgba(28, 28, 30, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .headerNavButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .buttonActive {
+  color: var(--color-primary);
+  background: rgba(0, 122, 255, 0.2);
+}
+
+[data-theme="dark"] .buttonActive:hover {
+  background: rgba(0, 122, 255, 0.25);
 }
 
 @media only screen and (min-height: 1500px) {
   .mainHeader {
     min-height: 5vh;
+  }
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  .mainHeader {
+    /* Ensure backdrop-filter works in Safari */
+    -webkit-transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
   }
 }
